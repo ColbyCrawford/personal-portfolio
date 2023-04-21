@@ -1,0 +1,15 @@
+@use '../abstracts' as *;
+
+.projects-list {
+    display: grid;
+
+    @media #{$break2open} {
+        grid-template-columns: repeat(auto-fill, minmax(340px, 1fr));
+        gap: 2rem;
+        margin-block-start: 2rem;
+
+        &:not(:last-child) {
+            margin-block-end: 4.5rem;
+        }
+    }
+}

@@ -1,0 +1,28 @@
+@use '../abstracts' as *;
+
+.tag {
+    display: inline-block;
+    font-size: $fs-3;
+    line-height: 1.25;
+    padding: 0.25rem 0.5rem;
+    color: clr(neutral, light);
+    background-color: clr(neutral, lighter);
+    border-radius: 100vh;
+    box-shadow: 0px 0px 4px rgba(59, 59, 69, 0.18);
+}
+
+// layout specific styles 
+.hero-graphic .tag {
+    position: absolute;
+
+    &:nth-of-type(1) {
+        bottom: 3rem;
+        left: -1.5rem;
+    }
+    &:nth-of-type(2) {
+        top: 1.3rem;
+        right: -0.2rem;
+    }
+}
+
+

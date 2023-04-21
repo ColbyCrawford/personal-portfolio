@@ -1,0 +1,25 @@
+$clr-primary-400: hsl(223, 83%, 55%);
+
+$clr-neutral-200: hsl(0, 0%, 98%);
+$clr-neutral-300: hsl(240, 5%, 60%);
+$clr-neutral-400: hsl(240, 6%, 41%);
+$clr-neutral-600: hsl(240, 8%, 25%);
+$clr-neutral-700: hsl(240, 6%, 12%);
+
+$colors: (
+    primary: (
+           base: $clr-primary-400,
+    ),
+    neutral: (
+         lighter: $clr-neutral-200, 
+           light: $clr-neutral-300, 
+            base: $clr-neutral-400, 
+            dark: $clr-neutral-600,
+          darker: $clr-neutral-700,
+        )
+    );
+
+@function clr($base, $shade: base, $a: 1) {
+    $rgb: map-get(map-get($colors, $base), $shade);
+    @return rgba($rgb, $a);
+}
