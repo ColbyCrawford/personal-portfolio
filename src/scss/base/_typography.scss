@@ -20,32 +20,64 @@ body {
     background-color: clr(neutral, lighter);
 }
 
-h1, .heading-xl,
-h2, .heading-lg,
-h3, .heading-ms,
-h4, .heading-sm,
-h5,
-h6 {
-    font-family: $ff-secondary;
+.heading-xl {
+    letter-spacing: 0.08em;
+
+    @media #{$break1}, #{$break2} {
+        font-size: $fs-6;
+        line-height: 1;
+    }
+    @media #{$break3open} {
+        font-size: $fs-7;
+        line-height: 0.875;
+    }
+    
 }
 
-.heading-xl {
-    font-size: $fs-7;
-    line-height: 0.875;
-    letter-spacing: 0.08em;
-}
 .heading-lg {
-    font-size: $fs-6;
-    line-height: 0.857142;
     letter-spacing: 0.04em;
+    @media #{$break1} {
+        font-size: 2.1875rem;
+        line-height: 1.142857;
+    }
+    @media #{$break2open} {
+        font-size: 2.5rem;
+        line-height: 1.2;
+    }
+    @media #{$break3open} {
+        font-size: $fs-6;
+        line-height: 1.16666;
+    }
 }
+
 .heading-ms {
     font-size: $fs-5;
     line-height: 0.857142;
     letter-spacing: 0.08em;
 } 
+
 .heading-sm {
     font-size: $fs-4;
-    line-height: 0.75;
+    line-height: 1.33333;
     font-weight: $fw-bold;
 } 
+
+.section-title {
+    font-family: $ff-secondary;
+    color: clr(neutral, dark);
+
+    @media #{$break1} {
+        margin-block-end: 3rem;
+    }
+    @media #{$break2open} {
+        margin-block-end: 3.5rem;
+    }
+    &::after {
+        content: '';   
+        display: block;
+        inline-size: 2.5rem;
+        block-size: 0.25rem;
+        background-color: clr(primary);
+        margin-block-start: 0.75rem;
+    }
+}

@@ -1,0 +1,47 @@
+@use '../abstracts' as *;
+
+#footer {
+    background-color: clr(neutral, darker);
+
+    @media #{$break1} { padding-block: 2.5rem 2rem; }
+    @media #{$break2open} { padding-block: 2.5rem; }
+}
+
+
+.l-footer {
+    display: grid;
+    gap: 1rem;
+
+    @media #{$break2open} {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+.footer-item {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+
+    font-family: $ff-secondary;
+    font-size: $fs-4;
+    line-height: 0.75;
+    letter-spacing: 0.08em;
+    color: clr(neutral, lighter);
+
+    @media #{$break2open} {
+        &:nth-child(2) { justify-self: end; }
+    }
+    
+    & > span { font-size: 2rem; }
+}
+
+.footer-copywrite {
+    align-self: end;
+    @media #{$break1} {
+        margin-top: 1rem;
+        text-align: center;
+    }
+    @media #{$break2open} {
+        text-align: right;
+    }
+}

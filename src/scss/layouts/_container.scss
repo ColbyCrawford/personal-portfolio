@@ -5,11 +5,11 @@
     margin-inline: auto;
 
     @media #{$break1} { 
-        --p-container-margin: 2rem;
+        --p-container-margin: 1.5rem;
         width: calc(100% - (2 * var(--p-container-margin))); 
     }
     @media #{$break2open} { 
-        --p-container-margin: 2.5rem;
+        --p-container-margin: 3.5rem;
         width: calc(100% - (2 * var(--p-container-margin))); 
     }
 }

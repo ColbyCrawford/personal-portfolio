@@ -3,7 +3,8 @@
 .logo {
     font-family: $ff-secondary;
     font-size: $fs-5;
-    line-height: 0.75;
+    line-height: 1.33333;
     letter-spacing: 0.06em;
     color: clr(neutral, lighter);
+    white-space: nowrap;
 }

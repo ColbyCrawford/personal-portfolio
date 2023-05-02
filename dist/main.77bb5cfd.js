@@ -172,7 +172,7 @@ module.exports = reloadCSS;
 var reloadCSS = require('_css_loader');
 module.hot.dispose(reloadCSS);
 module.hot.accept(reloadCSS);
-},{"/Users/colbycrawford/Documents/studio/web-development/projects/personal-portfolio/src/assets/vendors/icomoon/fonts/icomoon.eot":[["icomoon.80c4c412.eot","assets/vendors/icomoon/fonts/icomoon.eot"],"assets/vendors/icomoon/fonts/icomoon.eot"],"/Users/colbycrawford/Documents/studio/web-development/projects/personal-portfolio/src/assets/vendors/icomoon/fonts/icomoon.ttf":[["icomoon.fd1311bd.ttf","assets/vendors/icomoon/fonts/icomoon.ttf"],"assets/vendors/icomoon/fonts/icomoon.ttf"],"/Users/colbycrawford/Documents/studio/web-development/projects/personal-portfolio/src/assets/vendors/icomoon/fonts/icomoon.woff":[["icomoon.a59d55da.woff","assets/vendors/icomoon/fonts/icomoon.woff"],"assets/vendors/icomoon/fonts/icomoon.woff"],"/Users/colbycrawford/Documents/studio/web-development/projects/personal-portfolio/src/assets/vendors/icomoon/fonts/icomoon.svg":[["icomoon.79f550a5.svg","assets/vendors/icomoon/fonts/icomoon.svg"],"assets/vendors/icomoon/fonts/icomoon.svg"],"_css_loader":"../node_modules/parcel-bundler/src/builtins/css-loader.js"}],"../node_modules/parcel-bundler/src/builtins/hmr-runtime.js":[function(require,module,exports) {
+},{"/Users/colbycrawford/Documents/studio/web-development/projects/personal-portfolio/src/assets/vendors/icomoon/fonts/icomoon.eot":[["icomoon.80c4c412.eot","assets/vendors/icomoon/fonts/icomoon.eot"],"assets/vendors/icomoon/fonts/icomoon.eot"],"/Users/colbycrawford/Documents/studio/web-development/projects/personal-portfolio/src/assets/vendors/icomoon/fonts/icomoon.ttf":[["icomoon.fd1311bd.ttf","assets/vendors/icomoon/fonts/icomoon.ttf"],"assets/vendors/icomoon/fonts/icomoon.ttf"],"/Users/colbycrawford/Documents/studio/web-development/projects/personal-portfolio/src/assets/vendors/icomoon/fonts/icomoon.woff":[["icomoon.a59d55da.woff","assets/vendors/icomoon/fonts/icomoon.woff"],"assets/vendors/icomoon/fonts/icomoon.woff"],"/Users/colbycrawford/Documents/studio/web-development/projects/personal-portfolio/src/assets/vendors/icomoon/fonts/icomoon.svg":[["icomoon.79f550a5.svg","assets/vendors/icomoon/fonts/icomoon.svg"],"assets/vendors/icomoon/fonts/icomoon.svg"],"/Users/colbycrawford/Documents/studio/web-development/projects/personal-portfolio/src/assets/images/hero-bg-dots.svg":[["hero-bg-dots.f5ecf217.svg","assets/images/hero-bg-dots.svg"],"assets/images/hero-bg-dots.svg"],"_css_loader":"../node_modules/parcel-bundler/src/builtins/css-loader.js"}],"../node_modules/parcel-bundler/src/builtins/hmr-runtime.js":[function(require,module,exports) {
 var global = arguments[3];
 var OVERLAY_ID = '__parcel__error__overlay__';
 var OldModule = module.bundle.Module;
@@ -197,7 +197,7 @@ var parent = module.bundle.parent;
 if ((!parent || !parent.isParcelRequire) && typeof WebSocket !== 'undefined') {
   var hostname = "" || location.hostname;
   var protocol = location.protocol === 'https:' ? 'wss' : 'ws';
-  var ws = new WebSocket(protocol + '://' + hostname + ':' + "56168" + '/');
+  var ws = new WebSocket(protocol + '://' + hostname + ':' + "57334" + '/');
   ws.onmessage = function (event) {
     checkedAssets = {};
     assetsToAccept = [];

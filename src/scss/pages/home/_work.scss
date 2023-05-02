@@ -1,0 +1,9 @@
+@use '../../abstracts' as *;
+
+#work {
+    
+}
+
+.l-work {
+    @include marginBlockEnd(6rem, pxToRem(144), $size-160);
+}

@@ -21,14 +21,34 @@
     color: var(--p-btn-color);
     border: 2px solid var(--p-btn-color);
     box-shadow: 0px 4px 5px rgba(147, 154, 172, 0.31);
+
+    &:hover, 
+    &:focus-visible {
+        background-color: clr(primary, base, 0.15);
+    }
 }
 
-.btn-secondary {
+.btn-neutral {
     @extend %btn;
-    box-shadow: 0px 0px 4px rgba(147, 154, 172, 0.25);
+    --p-btn-background: hsl(240, 9%, 89%);
+    --p-btn-background-hover: hsl(240, 9%, 82%);
+
+    background-color: var(--p-btn-background);
+
+    &:hover,
+    &:focus-visible {
+        background-color: var(--p-btn-background-hover);
+    }
 }
 
-// layout specific styles 
-.hero-text .btn-secondary {
-    margin-right: 1rem;
+.btn-neutral-lighter {
+    @extend %btn;
+    background-color: clr(neutral, lighter);
+    color: clr(primary);
 }
+
+
+
+
+
+

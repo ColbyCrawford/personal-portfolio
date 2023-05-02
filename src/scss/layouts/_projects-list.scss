@@ -3,6 +3,9 @@
 .projects-list {
     display: grid;
 
+    @media #{$break1} {
+        gap: 1.5rem;
+    }
     @media #{$break2open} {
         grid-template-columns: repeat(auto-fill, minmax(340px, 1fr));
         gap: 2rem;
@@ -11,5 +14,35 @@
         &:not(:last-child) {
             margin-block-end: 4.5rem;
         }
+    }
+}
+
+.project-card {
+    padding: 1rem;
+    cursor: pointer;
+
+    &-img {
+        inline-size: 100%;
+        object-fit: cover;
+        max-block-size: pxToRem(168);
+        border-radius: 0.5rem;
+    }
+    &-title {
+        margin-block: 1.5rem 0.75rem;
+        font-family: $ff-primary;
+        color: clr(neutral, dark);
+    }
+    &-date {
+        font-size: $fs-1;
+        line-height: 1.33333;
+        font-weight: $fw-semi-bold;
+        text-transform: uppercase;
+        letter-spacing: 0.08em;
+        color: clr(neutral, light);
+        margin-block-end: 2rem;
+    }
+    &-btn {
+        inline-size: 100%;
+        text-align: center;
     }
 }

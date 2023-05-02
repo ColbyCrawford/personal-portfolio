@@ -1,0 +1,17 @@
+@use '../abstracts' as *;
+
+button:focus-visible {
+    position: relative;
+    outline: 1.5px solid clr(primary);
+    outline-offset: 0.25rem;
+    border-radius: 0.25rem;
+
+    &::before {
+        content: '';
+        position: absolute;
+        inset: 0;
+        outline: 1.5px solid clr(neutral, lighter);
+        outline-offset: 0.15rem;
+        border-radius: 0.25rem;
+    }
+}

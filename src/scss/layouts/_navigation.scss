@@ -1,13 +1,108 @@
 @use '../abstracts' as *;
 
+#navigation {
+    @media #{$break1}, #{$break2open} {
+        margin-block-end: 3.5rem;
+    }
+
+}
+
 .l-navigation {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding-block: 2.5rem;
+
+    @media #{$break1}, #{$break2} { padding-block: 2rem; }
+    @media #{$break3open} { padding-block: 2.5rem; }
 }
 
 .navigation-menu {
     display: flex;
-    gap: 3rem;
+
+    @media #{$break1} { 
+        position: absolute;
+        flex-direction: column;
+        color: clr(neutral, darker);
+        background-color: clr(neutral, lighter);
+        top: 0;
+        right: -16rem;
+        max-inline-size: 16rem;
+        inline-size: 100%;
+        block-size: 100vh;
+        padding: 4rem 2.5rem;
+        z-index: 100;
+        gap: 1rem;
+        transition: 0.3s ease-in-out;
+        visibility: hidden;
+    }
+    @media #{$break2} { color: clr(neutral, lighter); }
+    @media #{$break2open} { gap: 3rem; }
+    @media #{$break3open} { color: clr(neutral, light); }
+}
+
+.navigation-menu.is-open {
+    @media #{$break1} {
+        right: 0;
+        visibility: visible;
+    }
+}
+
+.navigation-menu-item:last-child {
+    @media #{$break2open} {
+        display: none;
+    }
+}
+
+.navigation-link {
+    position: relative;
+}
+
+.navigation-link:hover,
+.navigation-link:focus-visible {
+    &::before {
+        content: '';
+        position: absolute;
+        block-size: 1.5px;
+        inline-size: 100%;
+        bottom: 0;
+
+        @media #{$break1} { background-color: clr(primary); }
+        @media #{$break2} { background-color: clr(neutral, lighter); }
+        @media #{$break3open} { background-color: clr(neutral, light); }
+
+    }
+
+    @media #{$break1} {
+        color: clr(primary);
+    }
+}
+
+#menu-open-btn,
+#menu-close-btn {
+    cursor: pointer;
+}
+
+.icon-menu::before,
+.icon-close::before {
+    display: block;
+    font-size: 2rem;
+}
+
+#menu-open-btn {
+    @media #{$break2open} {
+        display: none;
+    }
+
+    & > .icon-menu::before {
+        color: clr(neutral, lighter);
+    }
+}
+
+#menu-close-btn {
+    position: absolute;
+    top: 1rem;
+    right: 1rem;
+    & > .icon-close::before {
+        color: clr(neutral, darker);
+    }
 }

@@ -1,10 +1,10 @@
 @font-face {
   font-family: 'icomoon';
-  src:  url('fonts/icomoon.eot?hsbw7x');
-  src:  url('fonts/icomoon.eot?hsbw7x#iefix') format('embedded-opentype'),
-    url('fonts/icomoon.ttf?hsbw7x') format('truetype'),
-    url('fonts/icomoon.woff?hsbw7x') format('woff'),
-    url('fonts/icomoon.svg?hsbw7x#icomoon') format('svg');
+  src:  url('fonts/icomoon.eot?9nl8gj');
+  src:  url('fonts/icomoon.eot?9nl8gj#iefix') format('embedded-opentype'),
+    url('fonts/icomoon.ttf?9nl8gj') format('truetype'),
+    url('fonts/icomoon.woff?9nl8gj') format('woff'),
+    url('fonts/icomoon.svg?9nl8gj#icomoon') format('svg');
   font-weight: normal;
   font-style: normal;
   font-display: block;
@@ -25,23 +25,23 @@
   -moz-osx-font-smoothing: grayscale;
 }
 
-.icon-speed:before {
+.icon-close:before {
   content: "\e900";
   color: #94949e;
 }
-.icon-usability:before {
+.icon-code:before {
   content: "\e901";
   color: #94949e;
 }
-.icon-code:before {
+.icon-email:before {
   content: "\e902";
   color: #94949e;
 }
-.icon-email:before {
+.icon-location:before {
   content: "\e903";
   color: #94949e;
 }
-.icon-location:before {
+.icon-menu:before {
   content: "\e904";
   color: #94949e;
 }
@@ -51,5 +51,13 @@
 }
 .icon-phone:before {
   content: "\e906";
+  color: #94949e;
+}
+.icon-speed:before {
+  content: "\e907";
+  color: #94949e;
+}
+.icon-usability:before {
+  content: "\e908";
   color: #94949e;
 }

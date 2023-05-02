@@ -1,6 +1,6 @@
 @use 'sass:meta';
 
-@layer normalize, reset, abstracts, base, layouts, modules, utilities;
+@layer normalize, reset, abstracts, base, pages, layouts, modules, utilities;
 
 @layer normalize {
     @include meta.load-css('base/normalize');
@@ -14,6 +14,10 @@
     @include meta.load-css('base');
 }
 
+@layer pages {
+    @include meta.load-css('pages');
+}
+
 @layer layouts {
     @include meta.load-css('layouts');
 }
@@ -21,3 +25,8 @@
 @layer modules {
     @include meta.load-css('modules');
 }
+
+@layer utilities {
+    @include meta.load-css('utilities');
+}
+

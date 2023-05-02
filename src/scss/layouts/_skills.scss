@@ -1,0 +1,60 @@
+@use '../abstracts' as *;
+
+#skills {
+    @include marginBlockEnd($size-120, 10rem, 10rem);
+}
+
+.l-skills {
+    display: flex;
+    align-content: start;
+
+    @media #{$break1}, #{$break2} {
+        flex-wrap: wrap;
+
+        & > * { flex-basis: 100%; }
+    }
+
+    @media #{$break1}, #{$break2} {
+        justify-content: center;
+    }
+
+    @media #{$break1} { gap: 1.5rem; }
+    @media #{$break2open} { gap: 2rem; }
+   
+    @media #{$break3open} {
+        & > * {
+            flex-basis: 100%;
+        }
+    }
+}
+
+.skill {
+    display: flex;
+    gap: 1.5rem;
+    
+
+    @media #{$break1} {
+        flex-direction: column;
+        padding: 2rem 1rem 1.5rem;
+    }
+
+    @media #{$break2} {
+        max-inline-size: 70%;
+    }
+
+    @media #{$break2open} {
+        gap: 1.5rem;
+        padding: 1.5rem;
+    }
+
+    @media #{$break3open} {
+       
+    }
+
+    &-icon { font-size: 2.5rem; }
+
+    &-title { 
+        margin-block-end: 0.75rem; 
+        color: clr(neutral, dark);
+    }
+}
