@@ -8,6 +8,7 @@
 
     &:focus-visible {
         --p-outline-color: hsl(var(--clr-focus));
+        
         outline: 0.25rem solid var(--p-outline-color);
         border-radius: 0.25rem;
     }

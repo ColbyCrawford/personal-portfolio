@@ -74,7 +74,7 @@
    * Add the correct font weight in Chrome, Edge, and Safari.
    */
   b,
-  strong {
+strong {
     font-weight: bolder;
   }
   /**
@@ -82,8 +82,8 @@
    * 2. Correct the odd `em` font sizing in all browsers.
    */
   code,
-  kbd,
-  samp {
+kbd,
+samp {
     font-family: monospace, monospace; /* 1 */
     font-size: 1em; /* 2 */
   }
@@ -98,7 +98,7 @@
    * all browsers.
    */
   sub,
-  sup {
+sup {
     font-size: 75%;
     line-height: 0;
     position: relative;
@@ -125,10 +125,10 @@
    * 2. Remove the margin in Firefox and Safari.
    */
   button,
-  input,
-  optgroup,
-  select,
-  textarea {
+input,
+optgroup,
+select,
+textarea {
     font-family: inherit; /* 1 */
     font-size: 100%; /* 1 */
     line-height: 1.15; /* 1 */
@@ -139,7 +139,7 @@
    * 1. Show the overflow in Edge.
    */
   button,
-  input { /* 1 */
+input { /* 1 */
     overflow: visible;
   }
   /**
@@ -147,16 +147,16 @@
    * 1. Remove the inheritance of text transform in Firefox.
    */
   button,
-  select { /* 1 */
+select { /* 1 */
     text-transform: none;
   }
   /**
    * Correct the inability to style clickable types in iOS and Safari.
    */
   button,
-  [type=button],
-  [type=reset],
-  [type=submit] {
+[type=button],
+[type=reset],
+[type=submit] {
     -webkit-appearance: button;
     appearance: button;
   }
@@ -164,9 +164,9 @@
    * Remove the inner border and padding in Firefox.
    */
   button::-moz-focus-inner,
-  [type=button]::-moz-focus-inner,
-  [type=reset]::-moz-focus-inner,
-  [type=submit]::-moz-focus-inner {
+[type=button]::-moz-focus-inner,
+[type=reset]::-moz-focus-inner,
+[type=submit]::-moz-focus-inner {
     border-style: none;
     padding: 0;
   }
@@ -174,9 +174,9 @@
    * Restore the focus styles unset by the previous rule.
    */
   button:-moz-focusring,
-  [type=button]:-moz-focusring,
-  [type=reset]:-moz-focusring,
-  [type=submit]:-moz-focusring {
+[type=button]:-moz-focusring,
+[type=reset]:-moz-focusring,
+[type=submit]:-moz-focusring {
     outline: 1px dotted ButtonText;
   }
   /**
@@ -216,7 +216,7 @@
    * 2. Remove the padding in IE 10.
    */
   [type=checkbox],
-  [type=radio] {
+[type=radio] {
     box-sizing: border-box; /* 1 */
     padding: 0; /* 2 */
   }
@@ -224,7 +224,7 @@
    * Correct the cursor style of increment and decrement buttons in Chrome.
    */
   [type=number]::-webkit-inner-spin-button,
-  [type=number]::-webkit-outer-spin-button {
+[type=number]::-webkit-outer-spin-button {
     height: auto;
   }
   /**
@@ -296,8 +296,8 @@
   }
   /* Preferred box-sizing value */
   *,
-  *::before,
-  *::after {
+*::before,
+*::after {
     box-sizing: border-box;
   }
   /* Reapply the pointer cursor for anchor tags */
@@ -384,20 +384,20 @@
     --p-background-color: hsl(var(--clr-neutral-700));
   }
   h1,
-  h2,
-  h3,
-  h4,
-  h5,
-  h6 {
+h2,
+h3,
+h4,
+h5,
+h6 {
     --p-text-color: hsl(var(--clr-neutral-700), 80%);
     color: var(--p-text-color);
   }
   .theme-dark h1,
-  .theme-dark h2,
-  .theme-dark h3,
-  .theme-dark h4,
-  .theme-dark h5,
-  .theme-dark h6 {
+.theme-dark h2,
+.theme-dark h3,
+.theme-dark h4,
+.theme-dark h5,
+.theme-dark h6 {
     --p-text-color: hsl(var(--clr-neutral-200));
     --p-background-color: hsl(var(--clr-neutral-700));
   }
@@ -461,8 +461,8 @@
   }
   @font-face {
     font-family: "icomoon";
-    src: url("/icomoon.80c4c412.eot?x4we22");
-    src: url("/icomoon.80c4c412.eot?x4we22#iefix") format("embedded-opentype"), url("/icomoon.fd1311bd.ttf?x4we22") format("truetype"), url("/icomoon.a59d55da.woff?x4we22") format("woff"), url("/icomoon.79f550a5.svg?x4we22#icomoon") format("svg");
+    src: url("/src/assets/vendors/icomoon/fonts/icomoon.eot?x4we22");
+    src: url("/src/assets/vendors/icomoon/fonts/icomoon.eot?x4we22#iefix") format("embedded-opentype"), url("/src/assets/vendors/icomoon/fonts/icomoon.ttf?x4we22") format("truetype"), url("/src/assets/vendors/icomoon/fonts/icomoon.woff?x4we22") format("woff"), url("/src/assets/vendors/icomoon/fonts/icomoon.svg?x4we22#icomoon") format("svg");
     font-weight: normal;
     font-style: normal;
     font-display: block;
@@ -660,7 +660,7 @@
   }
   @media (max-width: 767.99px) {
     .hero-text .btn-primary,
-    .hero-text .btn-secondary {
+.hero-text .btn-secondary {
       inline-size: 100%;
     }
   }
@@ -781,16 +781,16 @@
     --p-text-color-hover: hsl(var(--clr-neutral-200));
   }
   #menu-open-btn,
-  #menu-close-btn {
+#menu-close-btn {
     cursor: pointer;
   }
   #menu-open-btn:is(:focus-visible, :hover):where(:not(:disabled, .is-disabled)),
-  #menu-close-btn:is(:focus-visible, :hover):where(:not(:disabled, .is-disabled)) {
+#menu-close-btn:is(:focus-visible, :hover):where(:not(:disabled, .is-disabled)) {
     --p-icon-color: hsl(var(--clr-neutral-100));
     color: var(--p-icon-color);
   }
   #menu-open-btn:is(:focus-visible):where(:not(:disabled, .is-disabled)),
-  #menu-close-btn:is(:focus-visible):where(:not(:disabled, .is-disabled)) {
+#menu-close-btn:is(:focus-visible):where(:not(:disabled, .is-disabled)) {
     --p-outline-color: hsl(var(--clr-focus));
     outline: 0.25rem solid var(--p-outline-color);
     border-radius: 0.25rem;
@@ -806,7 +806,7 @@
     right: 1rem;
   }
   .icon-menu::before,
-  .icon-close::before {
+.icon-close::before {
     display: block;
     font-size: 2rem;
   }
@@ -920,7 +920,7 @@
     align-self: start;
   }
   .about-graphic::before {
-    content: url("/dots.c367baeb.svg");
+    content: url("/assets/images/dots.svg");
     position: absolute;
     z-index: -1;
   }
@@ -1028,9 +1028,9 @@
     }
   }
   .contact-form input[type=text],
-  .contact-form input[type=email],
-  .contact-form input[type=phone],
-  .contact-form textarea {
+.contact-form input[type=email],
+.contact-form input[type=phone],
+.contact-form textarea {
     --p-background-color: hsl(var(--clr-neutral-200));
     --p-border-color: hsl(var(--clr-neutral-700), 10%);
     inline-size: 100%;
@@ -1040,28 +1040,28 @@
     padding: 0.75rem 1rem;
   }
   .contact-form input[type=text]::placeholder,
-  .contact-form input[type=email]::placeholder,
-  .contact-form input[type=phone]::placeholder,
-  .contact-form textarea::placeholder {
+.contact-form input[type=email]::placeholder,
+.contact-form input[type=phone]::placeholder,
+.contact-form textarea::placeholder {
     --p-placeholder-color: hsl(var(--clr-neutral-700), 30%);
     color: var(--p-placeholder-color);
   }
   .contact-form input[type=text]:is(:focus-visible):where(:not(:disabled, .is-disabled)),
-  .contact-form input[type=email]:is(:focus-visible):where(:not(:disabled, .is-disabled)),
-  .contact-form input[type=phone]:is(:focus-visible):where(:not(:disabled, .is-disabled)),
-  .contact-form textarea:is(:focus-visible):where(:not(:disabled, .is-disabled)) {
+.contact-form input[type=email]:is(:focus-visible):where(:not(:disabled, .is-disabled)),
+.contact-form input[type=phone]:is(:focus-visible):where(:not(:disabled, .is-disabled)),
+.contact-form textarea:is(:focus-visible):where(:not(:disabled, .is-disabled)) {
     outline: 1px solid hsl(var(--clr-primary-400));
   }
   .theme-dark .contact-form input[type=text],
-  .theme-dark .contact-form input[type=email],
-  .theme-dark .contact-form input[type=phone],
-  .theme-dark .contact-form textarea {
+.theme-dark .contact-form input[type=email],
+.theme-dark .contact-form input[type=phone],
+.theme-dark .contact-form textarea {
     --p-background-color: hsl(var(--clr-neutral-700), 30%);
   }
   .theme-dark .contact-form input[type=text]::placeholder,
-  .theme-dark .contact-form input[type=email]::placeholder,
-  .theme-dark .contact-form input[type=phone]::placeholder,
-  .theme-dark .contact-form textarea::placeholder {
+.theme-dark .contact-form input[type=email]::placeholder,
+.theme-dark .contact-form input[type=phone]::placeholder,
+.theme-dark .contact-form textarea::placeholder {
     --p-placeholder-color: hsl(var(--clr-neutral-200), 30%);
   }
   .contact-form input {
@@ -1434,5 +1434,3 @@
     }
   }
 }
-
-/*# sourceMappingURL=/main.77bb5cfd.css.map */
