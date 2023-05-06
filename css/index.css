@@ -165,122 +165,96 @@
 
 .projects-outer {
   margin-block-end: 7.5rem;
-}dy {
-  overflow-x: hidden;
-};
-  background-color: var(--p-background-color);
-  color: var(--p-text-color);
-  border-radius: 100vw;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  inline-size: 4.5rem;
-  block-size: 4.5rem;
-  top: -2.25rem;
-  left: 50%;
-  transform: translateX(-50%);
-  outline: 8px solid var(--p-outline-color);
-}
-.theme-dark .skill-icon::before {
-  --p-outline-color: hsl(var(--clr-neutral-700));
-}
-.skill-title {
-  margin-block-end: 0.75rem;
+}idden;
+}t: center;
+  gap: 0.625rem;
 }
 
-#about {
-  margin-block-end: 10rem;
-}
-
-#about-title {
-  margin-block-end: 1.5rem;
-}
-
-.l-about {
-  display: flex;
-}
-@media (max-width: 767.99px) {
-  .l-about {
-    flex-direction: column;
-    gap: 4rem;
-  }
-}
-@media (min-width: 768px) and (max-width: 1198.99px) {
-  .l-about {
-    gap: 4rem;
-  }
-}
-@media (min-width: 1199px) {
-  .l-about {
-    justify-content: space-between;
-    gap: 4rem;
-  }
-}
-
-.about-text {
-  max-inline-size: 35.625rem;
-}
-.about-text > p:not(:last-of-type) {
-  margin-block-end: 1.5rem;
-}
-.about-text > p:last-of-type {
-  margin-block-end: 3.5rem;
-}
-
-.about-graphic {
-  position: relative;
-  align-self: start;
-}
-.about-graphic::before {
-  content: url("/assets/images/dots.svg");
+.skip-to-main-content {
   position: absolute;
-  z-index: -1;
-}
-@media (max-width: 767.99px) {
-  .about-graphic::before {
-    top: -3rem;
-    right: -3.25rem;
-  }
-}
-@media (min-width: 768px) {
-  .about-graphic::before {
-    bottom: -5.5rem;
-    left: -3.25rem;
-  }
+  inset: 0 auto auto 0;
+  z-index: -100;
+  opacity: 0;
 }
 
-.about-graphic-img-wrapper {
-  --p-border-color: hsl(var(--clr-neutral-100));
+.card {
+  --p-background-color: hsl(var(--clr-neutral-100));
+  border-radius: 0.5rem;
+  background-color: var(--p-background-color);
+}
+.theme-dark .card {
+  --p-background-color: hsl(var(--clr-neutral-600));
+}
+
+.overlay-visible::before {
+  content: "";
+  position: fixed;
+  z-index: 100;
+  inset: 0;
+  background-color: clr(neutral, darker, 0.75);
+  backdrop-filter: blur(0.5rem);
+}
+
+.toggle {
+  --p-border-color: hsl(var(--clr-neutral-700), 70%);
+  --p-border-color-hover: hsl(var(--clr-neutral-700));
   position: relative;
-  overflow: hidden;
-  border: 0.75rem solid var(--p-border-color);
-  border-radius: 7.5rem 7.5rem 1.25rem 1.25rem;
-  block-size: 24.6875rem;
-  background-color: red;
-}
-@media (min-width: 768px) {
-  .about-graphic-img-wrapper {
-    inline-size: 21.125rem;
-  }
-}
-.theme-dark .about-graphic-img-wrapper {
-  --p-border-color: hsl(var(--clr-neutral-600));
-}
-
-.about-graphic-img {
-  object-fit: cover;
+  border-radius: 100vw;
+  border: 0.0625rem solid var(--p-border-color);
+  block-size: 1.25rem;
+  inline-size: 2.5rem;
+  cursor: pointer;
   display: block;
-  min-block-size: 100%;
+}
+.toggle:is(:hover, :focus-visible):where(:not(:disabled, .is-disabled)) {
+  --p-border-color: var(--p-border-color-hover);
+}
+.toggle:is(:hover, :focus-visible):where(:not(:disabled, .is-disabled))::before {
+  --p-background-color: var(--p-background-color-hover);
+}
+.toggle:is(:focus-visible):where(:not(:disabled, .is-disabled)) {
+  --p-outline-color: hsl(var(--clr-focus));
+  outline: 0.25rem solid var(--p-outline-color);
+  border-radius: 0.25rem;
+}
+.theme-dark .toggle {
+  --p-border-color: hsl(var(--clr-neutral-200));
+}
+.toggle::before {
+  --p-background-color: hsl(var(--clr-neutral-700), 70%);
+  --p-background-color-hover: hsl(var(--clr-neutral-700));
+  content: "";
+  position: absolute;
+  top: 1px;
+  left: 1px;
+  display: block;
+  block-size: 1rem;
+  inline-size: 1rem;
+  border-radius: 100vw;
+  background-color: var(--p-background-color);
+}
+.theme-dark .toggle::before {
+  --p-background-color: hsl(var(--clr-neutral-200));
+}
+.toggle:checked {
+  --p-background-color: 112, 89%, 68%;
+  background-color: hsl(var(--p-background-color));
+}
+.toggle:checked::before {
+  left: calc(100% - 1rem - 1px);
 }
 
-#contact {
-  background-color: clr(primary);
-  position: relative;
-  z-index: 1;
-  margin-block-end: 4rem;
+.text-icon {
+  display: flex;
+  gap: 0.5rem;
+  align-items: center;
+  max-inline-size: max-content;
 }
 
-#contact-title {
+.transition {
+  display: block;
+  width: 100%;
+}itle {
   max-inline-size: 23.125rem;
 }
 @media (max-width: 767.99px), (min-width: 768px) and (max-width: 1198.99px) {
@@ -523,6 +497,7 @@
   row-gap: 1.5rem;
   place-content: center;
   justify-items: center;
+  min-block-size: 100%;
 }
 @media (max-width: 767.99px), (min-width: 768px) and (max-width: 1198.99px) {
   .projects-list-item:last-child > .card {
