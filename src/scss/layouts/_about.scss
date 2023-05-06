@@ -1,0 +1,79 @@
+@use '../abstracts' as *;
+
+#about {
+    margin-block-end: 10rem;
+}
+
+#about-title { margin-block-end: 1.5rem; }
+
+.l-about {
+    display: flex;
+
+
+    @media #{$break1} {
+        flex-direction: column;
+        gap: 4rem;
+    }
+
+    @media #{$break2} {
+        gap: 4rem;
+    }
+
+    @media #{$break3open} {
+        justify-content: space-between;
+        gap: 4rem;
+    }
+}
+
+
+.about-text {
+    max-inline-size: pxToRem(570);
+
+    & > p {
+        &:not(:last-of-type) { margin-block-end: 1.5rem; }
+        &:last-of-type { margin-block-end: 3.5rem; }
+    }
+
+}
+
+.about-graphic {
+    position: relative;
+    align-self: start;
+
+    &::before {
+        content: url('/assets/images/dots.svg');
+        position: absolute;
+        z-index: -1;
+
+        @media #{$break1} {
+            top: -3rem;
+            right: -3.25rem;
+        }
+
+        @media #{$break2open} {
+            bottom: -5.5rem;
+            left: -3.25rem;
+        }
+    }
+}
+
+.about-graphic-img-wrapper {
+    --p-border-color: hsl(var(--clr-neutral-100));
+
+    position: relative;
+    overflow: hidden;
+    border: 0.75rem solid var(--p-border-color);
+    border-radius: 7.5rem 7.5rem 1.25rem 1.25rem;
+    block-size: pxToRem(395);
+    background-color: red;
+
+    @media #{$break2open} { inline-size: pxToRem(338); }
+
+    #{$theme-dark} & { --p-border-color: hsl(var(--clr-neutral-600)); }
+}
+
+.about-graphic-img {
+    object-fit: cover;
+    display: block;
+    min-block-size: 100%;
+}

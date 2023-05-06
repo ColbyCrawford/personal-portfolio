@@ -1,10 +1,7 @@
 @use '../abstracts' as *;
 
 #navigation {
-    @media #{$break1}, #{$break2open} {
-        margin-block-end: 3.5rem;
-    }
-
+    @media #{$break1}, #{$break2open} { margin-block-end: 3.5rem; }
 }
 
 .l-navigation {
@@ -16,28 +13,42 @@
     @media #{$break3open} { padding-block: 2.5rem; }
 }
 
+.navigation-actions {
+    display: flex;
+    align-items: center;
+
+    @media #{$break1} { gap: 1rem; }
+    @media #{$break2open} { gap: 2rem; }
+}
+
 .navigation-menu {
     display: flex;
 
     @media #{$break1} { 
+        --p-background-color: hsl(var(--clr-neutral-100));
+
         position: absolute;
         flex-direction: column;
-        color: clr(neutral, darker);
-        background-color: clr(neutral, lighter);
         top: 0;
         right: -16rem;
         max-inline-size: 16rem;
         inline-size: 100%;
         block-size: 100vh;
+        background-color: var(--p-background-color);
         padding: 4rem 2.5rem;
         z-index: 100;
         gap: 1rem;
         transition: 0.3s ease-in-out;
         visibility: hidden;
     }
-    @media #{$break2} { color: clr(neutral, lighter); }
+
     @media #{$break2open} { gap: 3rem; }
-    @media #{$break3open} { color: clr(neutral, light); }
+
+    #{$theme-dark} & {
+        @media #{$break1} {
+            --p-background-color: hsl(var(--clr-neutral-700));
+        }
+    }
 }
 
 .navigation-menu.is-open {
@@ -48,61 +59,57 @@
 }
 
 .navigation-menu-item:last-child {
-    @media #{$break2open} {
-        display: none;
-    }
+    @media #{$break2open} { display: none; }
 }
 
 .navigation-link {
-    position: relative;
-}
+    --p-text-color-hover: hsl(var(--clr-neutral-700));
 
-.navigation-link:hover,
-.navigation-link:focus-visible {
-    &::before {
-        content: '';
-        position: absolute;
-        block-size: 1.5px;
-        inline-size: 100%;
-        bottom: 0;
-
-        @media #{$break1} { background-color: clr(primary); }
-        @media #{$break2} { background-color: clr(neutral, lighter); }
-        @media #{$break3open} { background-color: clr(neutral, light); }
-
+    &:is(:hover, :focus-visible) {
+        &:where(:not(#{$disabled})) {
+            color: var(--p-text-color-hover);
+        }
     }
 
-    @media #{$break1} {
-        color: clr(primary);
-    }
+    #{$theme-dark} & { --p-text-color-hover: hsl(var(--clr-neutral-200)); }
 }
 
+
+// MENU BUTTONS
 #menu-open-btn,
 #menu-close-btn {
     cursor: pointer;
-}
 
-.icon-menu::before,
-.icon-close::before {
-    display: block;
-    font-size: 2rem;
+    &:is(:focus-visible, :hover) {
+        &:where(:not(#{$disabled})) {
+            --p-icon-color: hsl(var(--clr-neutral-100));
+
+            color: var(--p-icon-color);
+        }
+    }
+
+    &:is(:focus-visible) {
+        &:where(:not(#{$disabled})) {
+            --p-outline-color: hsl(var(--clr-focus));
+
+            outline: 0.25rem solid var(--p-outline-color);
+            border-radius: 0.25rem;
+        }
+    }
 }
 
 #menu-open-btn {
-    @media #{$break2open} {
-        display: none;
-    }
-
-    & > .icon-menu::before {
-        color: clr(neutral, lighter);
-    }
+    @media #{$break2open} { display: none; }
 }
 
 #menu-close-btn {
     position: absolute;
     top: 1rem;
     right: 1rem;
-    & > .icon-close::before {
-        color: clr(neutral, darker);
-    }
+}
+
+.icon-menu::before,
+.icon-close::before {
+    display: block;
+    font-size: 2rem;
 }

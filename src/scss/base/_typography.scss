@@ -8,52 +8,73 @@
 // $fs-3: 1rem;       16px //
 // $fs-4: 1.125rem;   18px //
 // $fs-5: 1.5rem;     24px //
-// $fs-6: 3rem;       48px //
-// $fs-7: 3.5rem;     56px //
+// $fs-6: 2rem;       32px //
+// $fs-7: 3rem;       48px //
+// $fs-8: 3.5rem;     56px //
 // ----------------------- //                       
 
 body {
+    --p-text-color: hsl(var(--clr-neutral-700), 70%);
+    --p-background-color: hsl(var(--clr-neutral-200));
+
     font-family: $ff-primary;
     font-size: $fs-body;
-    line-height: 1.5;
-    color: clr(neutral);
-    background-color: clr(neutral, lighter);
+    line-height: 1.5555;
+    color: var(--p-text-color);
+    background-color: var(--p-background-color);
+
+
+    #{$theme-dark} & {
+        --p-text-color: hsl(var(--clr-neutral-200), 70%);
+        --p-background-color: hsl(var(--clr-neutral-700));
+    }
+}
+
+h1, 
+h2, 
+h3, 
+h4, 
+h5, 
+h6 {
+    --p-text-color: hsl(var(--clr-neutral-700), 80%);
+
+    color: var(--p-text-color);
+
+    #{$theme-dark} & {
+        --p-text-color: hsl(var(--clr-neutral-200));
+        --p-background-color: hsl(var(--clr-neutral-700));
+    }
 }
 
 .heading-xl {
     letter-spacing: 0.08em;
+    line-height: 1;
 
     @media #{$break1}, #{$break2} {
-        font-size: $fs-6;
-        line-height: 1;
+        font-size: $fs-7;
+        
     }
     @media #{$break3open} {
-        font-size: $fs-7;
-        line-height: 0.875;
+        font-size: $fs-8;
     }
     
 }
 
 .heading-lg {
-    letter-spacing: 0.04em;
+    font-weight: $fw-semi-bold;
     @media #{$break1} {
         font-size: 2.1875rem;
         line-height: 1.142857;
     }
     @media #{$break2open} {
-        font-size: 2.5rem;
-        line-height: 1.2;
-    }
-    @media #{$break3open} {
         font-size: $fs-6;
-        line-height: 1.16666;
+        line-height: 1.25; 
     }
 }
 
 .heading-ms {
     font-size: $fs-5;
-    line-height: 0.857142;
-    letter-spacing: 0.08em;
+    line-height: 1.16666;
 } 
 
 .heading-sm {
@@ -70,14 +91,15 @@ body {
         margin-block-end: 3rem;
     }
     @media #{$break2open} {
-        margin-block-end: 3.5rem;
-    }
-    &::after {
-        content: '';   
-        display: block;
-        inline-size: 2.5rem;
-        block-size: 0.25rem;
-        background-color: clr(primary);
-        margin-block-start: 0.75rem;
+        margin-block-end: 4.5rem;
     }
 }
+
+.is-ff-secondary {
+    font-family: $ff-secondary;
+}
+
+.has-letter-spacing-lg {
+    letter-spacing: 0.08em;
+}
+

@@ -33,25 +33,28 @@
     <header id="navigation">
         <div class="l-navigation l-container">
             <p class="logo">Colby Crawford</p>
-            <ul class="navigation-menu">
-                <li class="navigation-menu-item">
-                    <a href="#" class="navigation-link link">About me</a>
-                </li>
-                <li class="navigation-menu-item">
-                    <a href="#" class="navigation-link link">My work</a>
-                </li>
-                <li class="navigation-menu-item">
-                    <a href="#" class="navigation-link link">Get in touch</a>
-                </li>
-                <li class="navigation-menu-item">
-                    <button id="menu-close-btn">
-                        <span class="icon-close"></span>
-                    </button>
-                </li>
-            </ul>
-            <button id="menu-open-btn" aria-expanded="false">
-                <span class="icon-menu"></span>
-            </button>
+            <div class="navigation-actions">
+                <ul class="navigation-menu">
+                    <li class="navigation-menu-item">
+                        <a href="#about" class="navigation-link link">About me</a>
+                    </li>
+                    <li class="navigation-menu-item">
+                        <a href="#projects" class="navigation-link link">My projects</a>
+                    </li>
+                    <li class="navigation-menu-item">
+                        <a href="#contact" class="navigation-link link">Get in touch</a>
+                    </li>
+                    <li class="navigation-menu-item">
+                        <button id="menu-close-btn">
+                            <span class="icon-close"></span>
+                        </button>
+                    </li>
+                </ul>
+                <input id="theme-toggle" class="toggle" type="checkbox">
+                <button id="menu-open-btn" aria-expanded="false">
+                    <span class="icon-menu"></span>
+                </button>
+            </div>
         </div>
     </header>
     <!-- end of navigation -->
@@ -66,30 +69,33 @@
         <!---------->
         <section id="hero" aria-labelledby="hero-title">
             <div class="l-hero l-container">
+                <div class="hero-text">
+                    <h1 id="hero-title" class="heading-xl">
+                        Premium Websites for Small Businesses
+                    </h1>
+                    <p class="hero-body">
+                        Hey, I’m Colby Crawford, I help small businesses plan, design, and build winning websites that
+                        satisfy users needs.
+                    </p>
+                    <a href="#" class="btn-secondary">View my work</a>
+                    <a href="#" class="btn-primary">Work with me</a>
+                </div>
                 <div class="hero-graphic">
-                    <img class="hero-img" src="/surf.46cff150.jpg" alt="Colby smiling">
+                    <img class="hero-img" src="/hero-img.b24ae2a2.jpeg" alt="Colby smiling">
                     <p class="hero-graphic-tag">UX Designer</p>
                     <p class="hero-graphic-tag">Web Developer</p>
                 </div>
-                <div class="hero-text">
-                    <h1 id="hero-title" class="heading-xl">
-                        <span class="u-text-primary-400">Colby</span>
-                        <span class="u-text-neutral-300">Crawford</span>
-                    </h1>
-                    <p class="hero-body">
-                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer bibendum at tortor nec
-                        ultricies. Pellentesque
-                        cursus tellus sed euismod laoreet. Aliquam porta congue magna in ornare.
-                    </p>
-                    <a href="#" class="btn-neutral">View my work</a>
-                    <a href="#" class="btn-primary">Work with me</a>
+                <div class="hero-bg">
+                    <svg class="is-only-mobile" width="768" height="307" viewBox="0 0 768 307" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M0 0H768V275.135C768 275.135 571 203.438 373.961 275.135C176.922 346.832 0 275.135 0 275.135V0Z" fill="currentColor"></path>
+                    </svg>
+                    <svg class="is-only-tablet" width="1199" height="307" viewBox="0 0 1199 307" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M0 0H1199V275.135C1199 275.135 891.444 203.438 583.827 275.135C276.21 346.832 0 275.135 0 275.135V0Z" fill="currentColor"></path>
+                    </svg>
+                    <svg class="is-only-desktop" width="800" height="704" viewBox="0 0 800 704" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M800 0H0C0 0 247.126 0 365.157 340.94C483.187 681.881 800 704 800 704V0Z" fill="currentColor"></path>
+                    </svg>
                 </div>
-                <picture class="hero-bg">
-                    <source media="(max-width: 767.99px)" srcset="/hero-bg-mobile.0133f064.svg">
-                    <source media="(min-width: 768px) and (max-width: 1198.99px)" srcset="/hero-bg-tablet.268d6a00.svg">
-                    <source media="(min-width: 1199px)" srcset="/hero-bg-desktop.6c6b53fa.svg">
-                    <img class="hero-bg-img" src="/hero-bg-mobile.0133f064.svg" alt="">
-                </picture>
             </div>
         </section>
         <!-- end of hero -->
@@ -103,21 +109,21 @@
                 <div class="l-skills">
                     <div class="skill card">
                         <span class="skill-icon icon-code" aria-hidden="true"></span>
-                        <div class="skill-text">
-                            <h3 class="skill-title heading-sm">100% Hand Coded</h3>
-                            <p>
-                                Unlike page-builders that produce bloated code and slow down your site, I hand-write
-                                each line of code to maximize efficiency at run time.
-                            </p>
-                        </div>
+
+                        <h3 class="skill-title heading-sm">100% Hand Coded</h3>
+                        <p>
+                            I don’t use any page builders like Wordpress or Wix. I write each line of code with the
+                            intent to maximize site efficiency at launch.
+                        </p>
+
                     </div>
                     <div class="skill card">
                         <span class="skill-icon icon-optimize" aria-hidden="true"></span>
                         <div class="skill-text">
                             <h3 class="skill-title heading-sm">Site Optimization</h3>
                             <p>
-                                Utilizing human centered design tactics, I improve site performance whilst satisfying
-                                the underlying needs of users.
+                                From design to development, my web solutions are strategically created to solve the real
+                                world problems small businesses face.
                             </p>
                         </div>
                     </div>
@@ -126,8 +132,8 @@
                         <div class="skill-text">
                             <h3 class="skill-title heading-sm">Usability & Accessability</h3>
                             <p>
-                                My websites are built with assistive technologies in mind to make the web a more
-                                user-friendly and accessible place for all users.
+                                I hold myself to high usability and accessibility standards so that all users can
+                                benefit from a user-friendly solution.
                             </p>
                         </div>
                     </div>
@@ -136,104 +142,219 @@
         </section>
         <!-- end of skills -->
 
-        <!---------->
-        <!-- Work -->
-        <!---------->
-        <section id="work" aria-labelledby="work-title">
-            <div class="l-work l-container">
-                <h2 id="work-title" class="section-title heading-ms">My Work</h2>
-                <ul class="projects-list">
-                    <li class="projects-list-item">
-                        <a href="https://photosnap-colbycrawford.netlify.app/" target="_blank">
-                            <article class="project-card card">
-                                <img src="/photosnap.49106762.png" alt="FILL OUT" class="project-card-img">
-                                <div class="project-card-text">
-                                    <h3 class="project-card-title heading-sm">Photosnap Multi Page Website</h3>
-                                    <p class="project-card-date">April 23, 2023</p>
-                                    <a href="https://photosnap-colbycrawford.netlify.app/" class="project-card-btn btn-primary">View Site</a>
-                                </div>
-                            </article>
-                        </a>
-                    </li>
-                    <li class="projects-list-item">
-                        <a href="https://scoot-colbycrawford.netlify.app/" target="_blank">
-                            <article class="project-card card">
-                                <img src="/scoot.f62d2fde.png" alt="FILL OUT" class="project-card-img">
-                                <div class="project-card-text">
-                                    <h3 class="project-card-title heading-sm">Scoot Multi Page Website</h3>
-                                    <p class="project-card-date">April 1, 2023</p>
-                                    <a href="https://scoot-colbycrawford.netlify.app/" class="project-card-btn btn-primary">View Site</a>
-                                </div>
-                            </article>
-                        </a>
-                    </li>
-                    <li class="projects-list-item">
-                        <a href="https://realtor-colbycrawford.netlify.app/" target="_blank">
-                            <article class="project-card card">
-                                <img src="/property-management.4285611b.png" alt="FILL OUT" class="project-card-img">
-                                <div class="project-card-text">
-                                    <h3 class="project-card-title heading-sm">Property Management</h3>
-                                    <p class="project-card-date">January 25, 2023</p>
-                                    <a href="https://realtor-colbycrawford.netlify.app/" class="project-card-btn btn-primary">View Site</a>
-                                </div>
-                            </article>
-                        </a>
-                    </li>
-                    <li class="projects-list-item">
-                        <a href="https://easeybank-colbycrawford.netlify.app/" target="_blank">
-                            <article class="project-card card">
-                                <img src="/easybank.2f6211c8.png" alt="FILL OUT" class="project-card-img">
-                                <div class="project-card-text">
-                                    <h3 class="project-card-title heading-sm">Easybank Landing Page</h3>
-                                    <p class="project-card-date">February 12, 2023</p>
-                                    <a href="https://easeybank-colbycrawford.netlify.app/" class="project-card-btn btn-primary">View Site</a>
-                                </div>
-                            </article>
-                        </a>
-                    </li>
-                </ul>
-            </div>
-            <img class="section-transition" src="/curve-desktop.aafab878.svg" alt="">
-        </section>
-        <!-- end of projects -->
+        <div class="projects-outer">
+            <svg class="transition" viewBox="0 0 1440 104" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M1440 104C1021.5 -34 331 53.4182 0 0V104H1440Z" fill="#2D63EB" fill-opacity="0.06"></path>
+            </svg>
+            <!-------------->
+            <!-- Projects -->
+            <!-------------->
+            <section id="projects" aria-labelledby="project-title">
+                <div class="l-projects l-container">
+                    <h2 id="project-title" class="section-title heading-ms">Latest Projects</h2>
+                    <ul class="projects-list">
+                        <li class="projects-list-item">
+                            <a class="project-link" href="https://photosnap-colbycrawford.netlify.app/" target="_blank">
+                                <article class="project-card card">
+                                    <img src="/photosnap.49106762.png" alt="FILL OUT" class="project-card-img">
+                                    <div class="project-card-text">
+                                        <header>
+                                            <h3 class="project-card-title heading-sm">Photosnap Multi Page Website</h3>
+                                            <p class="project-card-body">Photosnap is a coding challenge provided by
+                                                Frontend
+                                                Mentor. It was designed by Frontend Mentor and developed by me using
+                                                100% HTML,
+                                                CSS
+                                                and JavaScript. No page builders or excess code! Fully optimized for the
+                                                fastest
+                                                page speeds.</p>
+                                        </header>
+                                        <div class="link-secondary-icon">
+                                            <p class="link-text">View Site</p>
+                                            <span class="icon-chevron-right"></span>
+                                        </div>
+                                    </div>
+                                </article>
+                            </a>
+                        </li>
+                        <li class="projects-list-item">
+                            <a class="project-link" href="https://scoot-colbycrawford.netlify.app/" target="_blank">
+                                <article class="project-card card">
+                                    <img src="/scoot.f62d2fde.png" alt="FILL OUT" class="project-card-img">
+                                    <div class="project-card-text">
+                                        <header>
+                                            <h3 class="project-card-title heading-sm">Scoot Multi Page Website</h3>
+                                            <p class="project-card-body">Scoot is a e-bike transportation service.
+                                                Design
+                                                provided
+                                                by Frontend Mentor.</p>
+                                        </header>
+                                        <div class="link-secondary-icon">
+                                            <p class="link-text">View Site</p>
+                                            <span class="icon-chevron-right"></span>
+                                        </div>
+                                    </div>
+                                </article>
+                            </a>
+                        </li>
+                        <li class="projects-list-item">
+                            <a class="project-link" href="https://realtor-colbycrawford.netlify.app/" target="_blank">
+                                <article class="project-card card">
+                                    <img src="/property-management.4285611b.png" alt="FILL OUT" class="project-card-img">
+                                    <div class="project-card-text">
+                                        <header>
+                                            <h3 class="project-card-title heading-sm">Property Management</h3>
+                                            <p class="project-card-body">This is a template property management site
+                                                designed
+                                                and
+                                                developed by me.</p>
+                                        </header>
+                                        <div class="link-secondary-icon">
+                                            <p class="link-text">View Site</p>
+                                            <span class="icon-chevron-right"></span>
+                                        </div>
+                                    </div>
+                                </article>
+                            </a>
+                        </li>
+                        <li class="projects-list-item">
+                            <a class="project-link" href="https://easeybank-colbycrawford.netlify.app/" target="_blank">
+                                <article class="project-card card">
+                                    <img src="/easybank.2f6211c8.png" alt="FILL OUT" class="project-card-img">
+                                    <div class="project-card-text">
+                                        <header>
+                                            <h3 class="project-card-title heading-sm">Easybank Landing Page</h3>
+                                            <p class="project-card-body">Easybank is a intermediate level coding
+                                                challenge
+                                                provided
+                                                by Frontend Mentor.</p>
+                                        </header>
+                                        <div class="link-secondary-icon">
+                                            <p class="link-text">View Site</p>
+                                            <span class="icon-chevron-right"></span>
+                                        </div>
+                                    </div>
+                                </article>
+                            </a>
+                        </li>
+                        <li class="projects-list-item">
+                            <div class="card">
+                                <h3 class="heading-lg">Want to work together?</h3>
+                                <a href="#contact" class="btn-secondary">Get in touch</a>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+            </section>
+            <!-- end of projects -->
+            <svg class="transition" viewBox="0 0 1440 120" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M0 0C253 101.5 1080.5 32.7273 1440 120V0H0Z" fill="#2D63EB" fill-opacity="0.06"></path>
+            </svg>
+        </div>
 
-        <!--------->
-        <!-- CTA -->
-        <!--------->
-        <section id="cta" aria-labelledby="cta-title">
-            <div class="l-cta l-container">
-                <h2 id="cta-title" class="heading-lg">Have a project idea? Hire me.</h2>
-                <a href="#" class="btn-neutral-lighter">Get In Touch</a>
+
+        <!----------->
+        <!-- About -->
+        <!----------->
+        <section id="about" aria-labelledby="about-title">
+            <div class="l-about l-container">
+                <div class="about-graphic">
+                    <div class="about-graphic-img-wrapper">
+                        <img class="about-graphic-img" src="/about-img.9c7d4a81.jpg" alt="ADD ALT TEXT">
+                    </div>
+                </div>
+                <div class="about-text">
+                    <h2 id="about-title" class="heading-lg">A Web-Developer With A Unique Approach To Web Solutions</h2>
+                    <p>
+                        I’m Colby, a self-taught programmer with an interest in designing and developing purpose-driven
+                        sites for small businesses.
+                    </p>
+                    <p>
+                        I focus on creating quality solutions by hand-writing all the code myself, and working tightly
+                        with a team of professional designers and copywriters to create web-content that is meaningful
+                        and valuable to your users.
+                    </p>
+                    <p>
+                        If you’d like to learn more or have any questions for me, please reach out.
+                    </p>
+                    <a href="#" class="btn-primary">Work with me</a>
+                </div>
             </div>
         </section>
 
+
+        <!------------->
+        <!-- Contact -->
+        <!------------->
+        <section id="contact" aria-labelledby="contact-title">
+            <div class="l-contact l-container">
+                <div class="contact-text">
+                    <h2 id="contact-title" class="heading-lg">Have a project idea? Lets work together!</h2>
+                    <div class="contact-info">
+                        <div class="text-icon">
+                            <span class="contact-info-icon icon-phone" aria-hidden="true"></span>
+                            <p>(858) 922-2186</p>
+                        </div>
+                        <div class="text-icon">
+                            <span class="contact-info-icon icon-email" aria-hidden="true"></span>
+                            <p>colbydev@gmail.com</p>
+                        </div>
+                    </div>
+                </div>
+                <form class="contact-form card" name="contact" action="POST" data-netlify="true" onsubmit="submit">
+                    <h3 class="contact-form-title heading-ms has-letter-spacing-lg is-ff-secondary">Leave me a message
+                    </h3>
+                    <label for="inputName" hidden="">Name</label>
+                    <input id="inputName" type="text" placeholder="Name">
+                    <label for="inputName" hidden="">Email</label>
+                    <input id="inputEmail" type="email" placeholder="Email">
+                    <label for="inputName" hidden="">Phone</label>
+                    <input id="inputPhone" type="phone" placeholder="Phone">
+                    <label for="inputMessage" hidden="">Message</label>
+                    <textarea name="message" id="inputMessage" placeholder="Type your message here..."></textarea>
+                    <button href="#" class="contact-form-btn btn-primary-icon">
+                        <p>Send</p>
+                        <span class="icon-send"></span>
+                    </button>
+                </form>
+            </div>
+        </section>
     </main>
     <!-- end of main -->
 
 
-    <!------------>
-    <!-- Footer -->
-    <!------------>
-    <footer id="footer">
-        <div class="l-footer l-container">
-            <div class="footer-item">
-                <span class="icon-phone" aria-hidden="true"></span>
-                <p>(858) 922-2186</p>
+
+    <div class="footer-outer">
+        <svg class="footer-transition transition" viewBox="0 0 1440 62" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path d="M1440 64H0C0 64 386 64 696 34C1006 4.00003 1440 0 1440 0V64Z" fill="currentColor"></path>
+        </svg>
+        <!------------>
+        <!-- Footer -->
+        <!------------>
+        <footer id="footer">
+            <div class="l-footer l-container">
+                <p class="logo">Colby Crawford</p>
+                <ul class="footer-links">
+                    <li class="footer-links-item">
+                        <a href="#" class="footer-link link">About Me</a>
+                    </li>
+                    <li class="footer-links-item">
+                        <a href="#" class="footer-link link">My Work</a>
+                    </li>
+                    <li class="footer-links-item">
+                        <a href="#" class="footer-link link">Get In Touch</a>
+                    </li>
+                </ul>
+                <p>Designed and Developed by Colby Crawford</p>
+                <p class="footer-copywrite">2023 © Copyright All Rights Reserved</p>
             </div>
-            <div class="footer-item">
-                <span class="icon-email" aria-hidden="true"></span>
-                <p>colbydev@gmail.com</p>
-            </div>
-            <div class="footer-item">
-                <span class="icon-location" aria-hidden="true"></span>
-                <p>San Diego, California</p>
-            </div>
-            <p class="footer-copywrite">© Copyright All Rights Reserved</p>
-        </div>
-    </footer>
-    <!-- end of footer -->
+        </footer>
+        <!-- end of footer -->
+    </div>
+
 
     <script src="/_navigation.5fecbae9.js"></script>
+    <script src="/_theme.98e8d24d.js"></script>
 </body>
 
 </html>

@@ -1,0 +1,135 @@
+@use '../abstracts' as *;
+
+#contact {
+    background-color: clr(primary);
+    position: relative;
+    z-index: 1;
+
+    margin-block-end: 4rem;
+}
+
+#contact-title {
+    max-inline-size: pxToRem(370);
+
+    @media #{$break1},
+    #{$break2} {
+        margin-block-end: 1rem;
+    }
+
+    @media #{$break3open} {
+        margin-bottom: 3rem;
+    }
+}
+
+.l-contact {
+    display: flex;
+
+    @media #{$break1},
+    #{$break2} {
+        flex-direction: column;
+    }
+
+    @media #{$break2open} {
+        justify-content: space-between;
+        gap: 4em;
+    }
+}
+
+
+
+.contact-text {
+
+    @media #{$break1},
+    #{$break2} {
+        margin-block-end: 2rem;
+    }
+}
+
+.contact-info {
+    @media #{$break1}, #{$break2} {
+        display: flex;
+        flex-wrap: wrap;
+        column-gap: 2rem;
+    }
+    &-icon {
+        font-size: 2rem;
+    }
+}
+
+
+.contact-form {
+    inline-size: 100%;
+
+    &-title {
+        text-align: center;
+
+        @media #{$break1} {
+            margin-block-end: 2rem;
+        }
+        @media #{$break2open} {
+            margin-block-end: 3rem;
+        }
+    }
+
+    &-btn {
+        @media #{$break1} {
+            min-inline-size: 100%;
+        }
+    }
+
+
+    input[type="text"],
+    input[type="email"],
+    input[type="phone"],
+    textarea {
+        --p-background-color: hsl(var(--clr-neutral-200));
+        --p-border-color: hsl(var(--clr-neutral-700), 10%);
+
+        inline-size: 100%;
+        background-color: var(--p-background-color);
+        border: 0.75px solid var(--p-border-color);
+        border-radius: 0.25rem;
+        padding: 0.75rem 1rem;
+
+        &::placeholder {
+            --p-placeholder-color: hsl(var(--clr-neutral-700), 30%);
+
+            color: var(--p-placeholder-color);
+        }
+
+        &:is(:focus-visible) {
+            &:where(:not(#{$disabled})) {
+                outline: 1px solid hsl(var(--clr-primary-400));
+            }
+        }
+
+        #{$theme-dark} & {
+            --p-background-color: hsl(var(--clr-neutral-700), 30%);
+
+            &::placeholder {
+                --p-placeholder-color: hsl(var(--clr-neutral-200), 30%);
+            }
+        }
+    }
+
+    input {
+        margin-block-end: 0.75rem;
+    }
+
+    textarea {
+        margin-block-end: 1.5rem;
+        min-block-size: pxToRem(144);
+    }
+
+    @media #{$break1} {
+        padding: 2rem;
+    }
+
+    @media #{$break2open} {
+        padding: 2rem 3rem;
+    }
+
+    @media #{$break3open} {
+        max-inline-size: pxToRem(540);
+    }
+}

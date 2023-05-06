@@ -7,11 +7,12 @@ $fs-2: 0.9375rem; // 15px
 $fs-3: 1rem;      // 16px
 $fs-4: 1.125rem;  // 18px
 $fs-5: 1.5rem;    // 24px
-$fs-6: 3rem;      // 48px
-$fs-7: 3.5rem;    // 56px
+$fs-6: 2rem;      // 32px
+$fs-7: 3rem;      // 48px
+$fs-8: 3.5rem;    // 56px
 
-$fs-body: $fs-3;
-$fs-body-lg: $fs-4;
+$fs-body: $fs-4;
+$fs-body-sm: $fs-3;
 $fs-btn: $fs-2;
 
 $fw-medium: 500;
@@ -24,3 +25,9 @@ $size-120: 7.5rem;
 $size-144: 9rem;
 $size-160: 10rem;
 
+
+// THEME
+$theme-dark: ".theme-dark";
+
+// DISABLED
+$disabled: ":disabled, .is-disabled";

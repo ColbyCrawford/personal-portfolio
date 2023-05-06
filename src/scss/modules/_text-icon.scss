@@ -1,0 +1,8 @@
+@use '../abstracts' as *;
+
+.text-icon {
+    display: flex;
+    gap: 0.5rem;
+    align-items: center;
+    max-inline-size: max-content;
+}

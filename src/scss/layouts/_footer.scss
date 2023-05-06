@@ -1,47 +1,48 @@
 @use '../abstracts' as *;
 
 #footer {
-    background-color: clr(neutral, darker);
+    --p-background-color:  hsl(var(--clr-neutral-700), 12%);
 
-    @media #{$break1} { padding-block: 2.5rem 2rem; }
-    @media #{$break2open} { padding-block: 2.5rem; }
+    background-color: var(--p-background-color);
+    padding-block: 8rem 2.5rem;
+
+    #{$theme-dark} & {
+        --p-background-color: hsl(var(--clr-primary-400));
+    }
+}
+
+.footer-transition {
+    --p-transition-color:  hsl(var(--clr-neutral-700), 12%);
+
+    color: var(--p-transition-color);
+
+    #{$theme-dark} & {
+        --p-transition-color: hsl(var(--clr-primary-400));
+    }
 }
 
 
 .l-footer {
-    display: grid;
-    gap: 1rem;
-
-    @media #{$break2open} {
-        grid-template-columns: repeat(2, 1fr);
-    }
+    text-align: center;
 }
 
-.footer-item {
+.footer-links {
     display: flex;
-    align-items: center;
-    gap: 0.5rem;
-
-    font-family: $ff-secondary;
-    font-size: $fs-4;
-    line-height: 0.75;
-    letter-spacing: 0.08em;
-    color: clr(neutral, lighter);
-
-    @media #{$break2open} {
-        &:nth-child(2) { justify-self: end; }
-    }
-    
-    & > span { font-size: 2rem; }
+    justify-content: center;
+    gap: 3rem;
+    margin-block: 2rem;
 }
 
-.footer-copywrite {
-    align-self: end;
-    @media #{$break1} {
-        margin-top: 1rem;
-        text-align: center;
+.footer-link {
+    --p-link-cover-hover: hsl(var(--clr-neutral-700));
+
+    &:is(:hover, :focus-visible) {
+        &:where(:not(#{$disabled})) {
+            color: var(--p-link-cover-hover);
+        }
     }
-    @media #{$break2open} {
-        text-align: right;
+
+    #{$theme-dark} & {
+        --p-link-cover-hover: hsl(var(--clr-neutral-100));
     }
 }

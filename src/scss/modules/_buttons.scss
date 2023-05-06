@@ -1,54 +1,80 @@
 @use '../abstracts' as *;
 
 %btn {
-    --p-btn-font-size: #{$fs-btn};
-    --p-btn-font-weight: #{$fw-medium};
-    --p-btn-padding: 0.75rem 2rem;
-    --p-btn-border-radius: 100vh;
+    --p-font-size: #{$fs-btn};
+    --p-font-weight: #{$fw-semi-bold};
+    --p-padding: 0.75rem 2rem;
+    --p-border-radius: 100vh;
 
     display: inline-block;
-    font-size: var(--p-btn-font-size);
+    font-size: var(--p-font-size);
+    font-weight: var(--p-font-weight);
     line-height: 1.06666;
-    padding: var(--p-btn-padding);
-    border-radius: var(--p-btn-border-radius);
+    padding: var(--p-padding);
+    border-radius: var(--p-border-radius);
     cursor: pointer;
+    letter-spacing: 2%;
+
+    &:focus-visible {
+        --p-outline-color: hsl(var(--clr-focus));
+        outline: 0.25rem solid var(--p-outline-color);
+        border-radius: 0.25rem;
+    }
 }
 
+
+// PRIMARY BUTTON
 .btn-primary {
     @extend %btn;
-    --p-btn-color: #{clr(primary)};
 
-    color: var(--p-btn-color);
-    border: 2px solid var(--p-btn-color);
-    box-shadow: 0px 4px 5px rgba(147, 154, 172, 0.31);
+    --p-text-color: hsl(var(--clr-neutral-200));
+    --p-button-color: hsl(var(--clr-primary-400));
+    --p-button-color-hover: hsl(var(--clr-primary-400), 85%);
 
-    &:hover, 
-    &:focus-visible {
-        background-color: clr(primary, base, 0.15);
+    color: var(--p-text-color);
+    background-color: var(--p-button-color);
+
+    &:is(:hover) {
+        &:where(:not(#{$disabled})) {
+            --p-button-color: var(--p-button-color-hover);
+        }
+    }
+
+}
+
+
+// SECONDARY BUTTON
+.btn-secondary {
+    @extend %btn;
+
+    --p-text-color: hsl(var(--clr-neutral-700), 80%);
+    --p-button-color: transparent;
+    --p-border-color: hsl(var(--clr-neutral-700), 30%);
+    --p-button-color-hover: hsl(var(--clr-neutral-700), 5%);
+
+    color: var(--p-text-color);
+    background-color: var(--p-button-color);
+    border: 1px solid var(--p-border-color);
+
+    &:is(:hover) {
+        &:where(:not(#{$disabled})) {
+            background-color: var(--p-button-color-hover);
+        }
+    }
+
+    #{$theme-dark} & {
+        --p-text-color: hsl(var(--clr-neutral-200));
+        --p-border-color: hsl(var(--clr-neutral-200), 40%);
+        --p-button-color: hsl(var(--clr-neutral-200), 10%);
+        --p-button-color-hover: transparent;
     }
 }
 
-.btn-neutral {
-    @extend %btn;
-    --p-btn-background: hsl(240, 9%, 89%);
-    --p-btn-background-hover: hsl(240, 9%, 82%);
+// PRIMARY BUTTON W/ ICON
+.btn-primary-icon {
+    @extend .btn-primary;
 
-    background-color: var(--p-btn-background);
-
-    &:hover,
-    &:focus-visible {
-        background-color: var(--p-btn-background-hover);
-    }
+    display: flex;
+    justify-content: center;
+    gap: 0.625rem;
 }
-
-.btn-neutral-lighter {
-    @extend %btn;
-    background-color: clr(neutral, lighter);
-    color: clr(primary);
-}
-
-
-
-
-
-

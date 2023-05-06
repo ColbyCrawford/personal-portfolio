@@ -1,10 +1,45 @@
 @use '../abstracts' as *;
 
 .logo {
+    --p-text-color: hsl(var(--clr-neutral-700), 80%);
+
+    position: relative;
+    max-inline-size: max-content;
     font-family: $ff-secondary;
+    letter-spacing: 0.06em;
+    color: var(--p-text-color);
+    white-space: nowrap;
     font-size: $fs-5;
     line-height: 1.33333;
-    letter-spacing: 0.06em;
-    color: clr(neutral, lighter);
-    white-space: nowrap;
+    
+
+    #{$theme-dark} & { --p-text-color: hsl(var(--clr-neutral-200)); }
+
+    &::after {
+        --p-text-color: hsl(var(--clr-neutral-700), 60%);
+
+        content: 'Practical Web Solutions';
+        font-size: 0.875rem;
+        line-height: 1.1428;
+        color: var(--p-text-color);
+
+        #{$theme-dark} & {
+            --p-text-color: hsl(var(--clr-neutral-200), 60%);
+        }
+    }
+}
+
+#navigation .logo {
+    &::after {
+        position: absolute !important;
+        bottom: -1rem;
+        left: 0;
+    }
+}
+
+
+#footer .logo {
+    margin-inline: auto;
+    justify-content: center;
+    display: grid;
 }
