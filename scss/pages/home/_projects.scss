@@ -1,14 +1,27 @@
 @use '../../abstracts' as *;
 
 #projects {
-    --p-background-color: hsl(var(--clr-primary-400), 6%);
+    --p-background-color: hsl(var(--clr-primary-200));
 
     background-color: var(--p-background-color); 
     padding-block-end: 4rem;
 
+    #{$theme-dark} & {
+        --p-background-color: hsl(var(--clr-primary-600));
+    }
 }
 
 .projects-outer {
     margin-block-end: 7.5rem;
+}
+
+.project-transition {
+    --p-transition-color: hsl(var(--clr-primary-200));
+
+    color: var(--p-transition-color);
+
+    #{$theme-dark} & {
+        --p-transition-color: hsl(var(--clr-primary-600));
+    }
 }
 

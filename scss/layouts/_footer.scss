@@ -1,7 +1,7 @@
 @use '../abstracts' as *;
 
 #footer {
-    --p-background-color:  hsl(var(--clr-neutral-700), 12%);
+    --p-background-color:  hsl(var(--clr-neutral-300));
 
     background-color: var(--p-background-color);
     padding-block: 8rem 2.5rem;
@@ -12,7 +12,7 @@
 }
 
 .footer-transition {
-    --p-transition-color:  hsl(var(--clr-neutral-700), 12%);
+    --p-transition-color:  hsl(var(--clr-neutral-300));
 
     color: var(--p-transition-color);
 

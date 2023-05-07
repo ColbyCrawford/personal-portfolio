@@ -1,10 +1,13 @@
 @use '../abstracts' as *;
 
 :root {
+    --clr-primary-200: 223, 19%, 92%;
     --clr-primary-400: 223, 83%, 55%;
+    --clr-primary-600: 223, 19%, 14%;
 
     --clr-neutral-100: 0, 0%, 100%;
     --clr-neutral-200: 223, 1%, 95%;
+    --clr-neutral-300: 240, 1%, 85%;
     --clr-neutral-700: 240, 6%, 12%;
 
     /* dark mode colors */
