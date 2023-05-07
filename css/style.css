@@ -405,12 +405,12 @@ h6 {
     letter-spacing: 0.08em;
     line-height: 1;
   }
-  @media (max-width: 767.99px), (min-width: 768px) and (max-width: 1198.99px) {
+  @media only screen and (max-width: 767.99px), only screen and (min-width: 768px) and (max-width: 1198.99px) {
     .heading-xl {
       font-size: 3rem;
     }
   }
-  @media (min-width: 1199px) {
+  @media only screen and (min-width: 1199px) {
     .heading-xl {
       font-size: 3.5rem;
     }
@@ -418,13 +418,13 @@ h6 {
   .heading-lg {
     font-weight: 600;
   }
-  @media (max-width: 767.99px) {
+  @media only screen and (max-width: 767.99px) {
     .heading-lg {
       font-size: 2.1875rem;
       line-height: 1.142857;
     }
   }
-  @media (min-width: 768px) {
+  @media only screen and (min-width: 768px) {
     .heading-lg {
       font-size: 2rem;
       line-height: 1.25;
@@ -443,12 +443,12 @@ h6 {
     font-family: "Koulen", sans-serif;
     color: clr(neutral, dark);
   }
-  @media (max-width: 767.99px) {
+  @media only screen and (max-width: 767.99px) {
     .section-title {
       margin-block-end: 3rem;
     }
   }
-  @media (min-width: 768px) {
+  @media only screen and (min-width: 768px) {
     .section-title {
       margin-block-end: 4.5rem;
     }
@@ -535,12 +535,12 @@ h6 {
   }
 }
 @layer pages {
-  @media (max-width: 767.99px), (min-width: 768px) and (max-width: 1198.99px) {
+  @media only screen and (max-width: 767.99px), only screen and (min-width: 768px) and (max-width: 1198.99px) {
     #hero {
       margin-block-end: 10rem;
     }
   }
-  @media (min-width: 1199px) {
+  @media only screen and (min-width: 1199px) {
     #hero {
       margin-block-end: 12rem;
     }
@@ -555,13 +555,13 @@ h6 {
     justify-content: center;
     gap: 4.5rem;
   }
-  @media (max-width: 767.99px), (min-width: 768px) and (max-width: 1198.99px) {
+  @media only screen and (max-width: 767.99px), only screen and (min-width: 768px) and (max-width: 1198.99px) {
     .l-hero {
       flex-direction: column-reverse;
       gap: 3rem;
     }
   }
-  @media (min-width: 1199px) {
+  @media only screen and (min-width: 1199px) {
     .l-hero {
       gap: 4.5rem;
     }
@@ -584,7 +584,7 @@ h6 {
     position: absolute;
     z-index: -1;
   }
-  @media (max-width: 767.99px), (min-width: 768px) and (max-width: 1198.99px) {
+  @media only screen and (max-width: 767.99px), only screen and (min-width: 768px) and (max-width: 1198.99px) {
     .hero-bg {
       display: block;
       top: -9.5rem;
@@ -592,7 +592,7 @@ h6 {
       block-size: 400px;
     }
   }
-  @media (min-width: 1199px) {
+  @media only screen and (min-width: 1199px) {
     .hero-bg {
       right: -10.25rem;
       top: -10.5rem;
@@ -653,12 +653,12 @@ h6 {
   .hero-text {
     max-width: 43.75rem;
   }
-  @media (max-width: 767.99px), (min-width: 768px) and (max-width: 1198.99px) {
+  @media only screen and (max-width: 767.99px), only screen and (min-width: 768px) and (max-width: 1198.99px) {
     .hero-text {
       text-align: center;
     }
   }
-  @media (max-width: 767.99px) {
+  @media only screen and (max-width: 767.99px) {
     .hero-text .btn-primary,
 .hero-text .btn-secondary {
       inline-size: 100%;
@@ -667,7 +667,7 @@ h6 {
   .hero-text .btn-secondary {
     margin-right: 1rem;
   }
-  @media (max-width: 767.99px) {
+  @media only screen and (max-width: 767.99px) {
     .hero-text .btn-secondary {
       margin-block-end: 1rem;
     }
@@ -675,12 +675,12 @@ h6 {
   .hero-body {
     padding-block-start: 1.25rem;
   }
-  @media (max-width: 767.99px), (min-width: 768px) and (max-width: 1198.99px) {
+  @media only screen and (max-width: 767.99px), only screen and (min-width: 768px) and (max-width: 1198.99px) {
     .hero-body {
       padding-block-end: 2.5rem;
     }
   }
-  @media (min-width: 1199px) {
+  @media only screen and (min-width: 1199px) {
     .hero-body {
       padding-block-end: 3.5rem;
     }
@@ -695,7 +695,7 @@ h6 {
   }
 }
 @layer layouts {
-  @media (max-width: 767.99px), (min-width: 768px) {
+  @media only screen and (max-width: 767.99px), only screen and (min-width: 768px) {
     #navigation {
       margin-block-end: 3.5rem;
     }
@@ -705,12 +705,12 @@ h6 {
     justify-content: space-between;
     align-items: center;
   }
-  @media (max-width: 767.99px), (min-width: 768px) and (max-width: 1198.99px) {
+  @media only screen and (max-width: 767.99px), only screen and (min-width: 768px) and (max-width: 1198.99px) {
     .l-navigation {
       padding-block: 2rem;
     }
   }
-  @media (min-width: 1199px) {
+  @media only screen and (min-width: 1199px) {
     .l-navigation {
       padding-block: 2.5rem;
     }
@@ -719,12 +719,12 @@ h6 {
     display: flex;
     align-items: center;
   }
-  @media (max-width: 767.99px) {
+  @media only screen and (max-width: 767.99px) {
     .navigation-actions {
       gap: 1rem;
     }
   }
-  @media (min-width: 768px) {
+  @media only screen and (min-width: 768px) {
     .navigation-actions {
       gap: 2rem;
     }
@@ -732,7 +732,7 @@ h6 {
   .navigation-menu {
     display: flex;
   }
-  @media (max-width: 767.99px) {
+  @media only screen and (max-width: 767.99px) {
     .navigation-menu {
       --p-background-color: hsl(var(--clr-neutral-100));
       position: absolute;
@@ -750,23 +750,23 @@ h6 {
       visibility: hidden;
     }
   }
-  @media (min-width: 768px) {
+  @media only screen and (min-width: 768px) {
     .navigation-menu {
       gap: 3rem;
     }
   }
-  @media (max-width: 767.99px) {
+  @media only screen and (max-width: 767.99px) {
     .theme-dark .navigation-menu {
       --p-background-color: hsl(var(--clr-neutral-700));
     }
   }
-  @media (max-width: 767.99px) {
+  @media only screen and (max-width: 767.99px) {
     .navigation-menu.is-open {
       right: 0;
       visibility: visible;
     }
   }
-  @media (min-width: 768px) {
+  @media only screen and (min-width: 768px) {
     .navigation-menu-item:last-child {
       display: none;
     }
@@ -795,7 +795,7 @@ h6 {
     outline: 0.25rem solid var(--p-outline-color);
     border-radius: 0.25rem;
   }
-  @media (min-width: 768px) {
+  @media only screen and (min-width: 768px) {
     #menu-open-btn {
       display: none;
     }
@@ -810,17 +810,17 @@ h6 {
     display: block;
     font-size: 2rem;
   }
-  @media (max-width: 767.99px) {
+  @media only screen and (max-width: 767.99px) {
     #skills {
       margin-block-end: 7.5rem;
     }
   }
-  @media (min-width: 768px) and (max-width: 1198.99px) {
+  @media only screen and (min-width: 768px) and (max-width: 1198.99px) {
     #skills {
       margin-block-end: 10rem;
     }
   }
-  @media (min-width: 1199px) {
+  @media only screen and (min-width: 1199px) {
     #skills {
       margin-block-end: 10rem;
     }
@@ -829,19 +829,19 @@ h6 {
     display: flex;
     align-content: start;
   }
-  @media (max-width: 767.99px), (min-width: 768px) and (max-width: 1198.99px) {
+  @media only screen and (max-width: 767.99px), only screen and (min-width: 768px) and (max-width: 1198.99px) {
     .l-skills {
       flex-wrap: wrap;
       justify-content: center;
       gap: 3.5rem;
     }
   }
-  @media (min-width: 768px) and (max-width: 1198.99px) {
+  @media only screen and (min-width: 768px) and (max-width: 1198.99px) {
     .l-skills > * {
       flex-basis: 70%;
     }
   }
-  @media (min-width: 1199px) {
+  @media only screen and (min-width: 1199px) {
     .l-skills {
       gap: 2rem;
     }
@@ -889,18 +889,18 @@ h6 {
   .l-about {
     display: flex;
   }
-  @media (max-width: 767.99px) {
+  @media only screen and (max-width: 767.99px) {
     .l-about {
       flex-direction: column;
       gap: 4rem;
     }
   }
-  @media (min-width: 768px) and (max-width: 1198.99px) {
+  @media only screen and (min-width: 768px) and (max-width: 1198.99px) {
     .l-about {
       gap: 4rem;
     }
   }
-  @media (min-width: 1199px) {
+  @media only screen and (min-width: 1199px) {
     .l-about {
       justify-content: space-between;
       gap: 4rem;
@@ -924,13 +924,13 @@ h6 {
     position: absolute;
     z-index: -1;
   }
-  @media (max-width: 767.99px) {
+  @media only screen and (max-width: 767.99px) {
     .about-graphic::before {
       top: -3rem;
       right: -3.25rem;
     }
   }
-  @media (min-width: 768px) {
+  @media only screen and (min-width: 768px) {
     .about-graphic::before {
       bottom: -5.5rem;
       left: -3.25rem;
@@ -945,7 +945,7 @@ h6 {
     block-size: 24.6875rem;
     background-color: red;
   }
-  @media (min-width: 768px) {
+  @media only screen and (min-width: 768px) {
     .about-graphic-img-wrapper {
       inline-size: 21.125rem;
     }
@@ -967,12 +967,12 @@ h6 {
   #contact-title {
     max-inline-size: 23.125rem;
   }
-  @media (max-width: 767.99px), (min-width: 768px) and (max-width: 1198.99px) {
+  @media only screen and (max-width: 767.99px), only screen and (min-width: 768px) and (max-width: 1198.99px) {
     #contact-title {
       margin-block-end: 1rem;
     }
   }
-  @media (min-width: 1199px) {
+  @media only screen and (min-width: 1199px) {
     #contact-title {
       margin-bottom: 3rem;
     }
@@ -980,23 +980,23 @@ h6 {
   .l-contact {
     display: flex;
   }
-  @media (max-width: 767.99px), (min-width: 768px) and (max-width: 1198.99px) {
+  @media only screen and (max-width: 767.99px), only screen and (min-width: 768px) and (max-width: 1198.99px) {
     .l-contact {
       flex-direction: column;
     }
   }
-  @media (min-width: 768px) {
+  @media only screen and (min-width: 768px) {
     .l-contact {
       justify-content: space-between;
       gap: 4em;
     }
   }
-  @media (max-width: 767.99px), (min-width: 768px) and (max-width: 1198.99px) {
+  @media only screen and (max-width: 767.99px), only screen and (min-width: 768px) and (max-width: 1198.99px) {
     .contact-text {
       margin-block-end: 2rem;
     }
   }
-  @media (max-width: 767.99px), (min-width: 768px) and (max-width: 1198.99px) {
+  @media only screen and (max-width: 767.99px), only screen and (min-width: 768px) and (max-width: 1198.99px) {
     .contact-info {
       display: flex;
       flex-wrap: wrap;
@@ -1012,17 +1012,17 @@ h6 {
   .contact-form-title {
     text-align: center;
   }
-  @media (max-width: 767.99px) {
+  @media only screen and (max-width: 767.99px) {
     .contact-form-title {
       margin-block-end: 2rem;
     }
   }
-  @media (min-width: 768px) {
+  @media only screen and (min-width: 768px) {
     .contact-form-title {
       margin-block-end: 3rem;
     }
   }
-  @media (max-width: 767.99px) {
+  @media only screen and (max-width: 767.99px) {
     .contact-form-btn {
       min-inline-size: 100%;
     }
@@ -1071,17 +1071,17 @@ h6 {
     margin-block-end: 1.5rem;
     min-block-size: 9rem;
   }
-  @media (max-width: 767.99px) {
+  @media only screen and (max-width: 767.99px) {
     .contact-form {
       padding: 2rem;
     }
   }
-  @media (min-width: 768px) {
+  @media only screen and (min-width: 768px) {
     .contact-form {
       padding: 2rem 3rem;
     }
   }
-  @media (min-width: 1199px) {
+  @media only screen and (min-width: 1199px) {
     .contact-form {
       max-inline-size: 33.75rem;
     }
@@ -1123,13 +1123,13 @@ h6 {
     max-inline-size: 69.375rem;
     margin-inline: auto;
   }
-  @media (max-width: 767.99px) {
+  @media only screen and (max-width: 767.99px) {
     .l-container {
       --p-container-margin: 1.5rem;
       width: calc(100% - 2 * var(--p-container-margin));
     }
   }
-  @media (min-width: 768px) {
+  @media only screen and (min-width: 768px) {
     .l-container {
       --p-container-margin: 3.5rem;
       width: calc(100% - 2 * var(--p-container-margin));
@@ -1138,12 +1138,12 @@ h6 {
   .projects-list {
     display: grid;
   }
-  @media (max-width: 767.99px) {
+  @media only screen and (max-width: 767.99px) {
     .projects-list {
       gap: 1.5rem;
     }
   }
-  @media (min-width: 768px) {
+  @media only screen and (min-width: 768px) {
     .projects-list {
       grid-template-columns: repeat(auto-fill, minmax(340px, 1fr));
       gap: 2rem;
@@ -1178,7 +1178,7 @@ h6 {
   .projects-list-item {
     border-radius: 0.5rem;
   }
-  @media (min-width: 1199px) {
+  @media only screen and (min-width: 1199px) {
     .projects-list-item:first-child {
       grid-column: span 2;
     }
@@ -1196,7 +1196,7 @@ h6 {
     justify-items: center;
     min-block-size: 100%;
   }
-  @media (max-width: 767.99px), (min-width: 768px) and (max-width: 1198.99px) {
+  @media only screen and (max-width: 767.99px), only screen and (min-width: 768px) and (max-width: 1198.99px) {
     .projects-list-item:last-child > .card {
       padding: 4rem;
     }
@@ -1419,17 +1419,17 @@ h6 {
   .u-overflow-y-hidden {
     overflow-y: hidden;
   }
-  @media (min-width: 768px) {
+  @media only screen and (min-width: 768px) {
     .is-only-mobile {
       display: none !important;
     }
   }
-  @media (max-width: 767.99px), (min-width: 1199px) {
+  @media only screen and (max-width: 767.99px), only screen and (min-width: 1199px) {
     .is-only-tablet {
       display: none !important;
     }
   }
-  @media (max-width: 767.99px), (min-width: 768px) and (max-width: 1198.99px) {
+  @media only screen and (max-width: 767.99px), only screen and (min-width: 768px) and (max-width: 1198.99px) {
     .is-only-desktop {
       display: none !important;
     }
