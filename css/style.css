@@ -605,7 +605,7 @@ h6 {
     }
   }
   .hero-bg > svg {
-    --p-svg-color: hsl(var(--clr-neutral-700), 12%);
+    --p-svg-color: hsl(var(--clr-neutral-300));
     color: var(--p-svg-color);
     inline-size: 100%;
   }
@@ -676,7 +676,7 @@ h6 {
   }
   @media only screen and (max-width: 767.99px) {
     .hero-text .btn-secondary {
-      margin-block-end: 1rem;
+      margin-block-end: 0.75rem;
     }
   }
   .hero-body {
