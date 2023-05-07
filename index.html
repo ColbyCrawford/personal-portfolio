@@ -306,18 +306,17 @@
                     <h3 class="contact-form-title heading-ms has-letter-spacing-lg is-ff-secondary">
                         Leave me a message
                     </h3>
-
                     <label for="inputName" hidden>Name</label>
-                    <input id="inputName" type="text" placeholder="Name">
+                    <input id="inputName" name="name" type="text" placeholder="Name" required>
 
-                    <label for="inputName" hidden>Email</label>
-                    <input id="inputEmail" type="email" placeholder="Email">
+                    <label for="inpuEmail" hidden>Email</label>
+                    <input id="inputEmail" name="email" type="email" placeholder="Email" required>
 
-                    <label for="inputName" hidden>Phone</label>
-                    <input id="inputPhone" type="text" placeholder="Phone">
+                    <label for="inputPhone" hidden>Phone</label>
+                    <input id="inputPhone" name="phone" type="text" placeholder="Phone">
 
                     <label for="inputMessage" hidden>Message</label>
-                    <textarea name="message" id="inputMessage" placeholder="Type your message here..."></textarea>
+                    <textarea id="inputMessage" name="message" placeholder="Type your message here..." required></textarea>
 
                     <button class="contact-form-btn btn-primary-icon">
                         <span>Send</span>
