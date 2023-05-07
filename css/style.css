@@ -1113,7 +1113,7 @@ h6 {
   #footer {
     --p-background-color: hsl(var(--clr-neutral-300));
     background-color: var(--p-background-color);
-    padding-block: 8rem 2.5rem;
+    padding-block: 4rem 3.5rem;
   }
   .theme-dark #footer {
     --p-background-color: hsl(var(--clr-primary-400));
@@ -1142,6 +1142,14 @@ h6 {
   }
   .theme-dark .footer-link {
     --p-link-cover-hover: hsl(var(--clr-neutral-100));
+  }
+  .footer-copywrite {
+    --p-text-color: hsl(var(--clr-neutral-700), 30%);
+    font-size: 1rem;
+    color: var(--p-text-color);
+  }
+  .theme-dark .footer-copywrite {
+    --p-text-color: hsl(var(--clr-neutral-200), 30%);
   }
   .l-container {
     max-inline-size: 69.375rem;

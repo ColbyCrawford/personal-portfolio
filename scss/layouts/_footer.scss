@@ -4,7 +4,7 @@
     --p-background-color:  hsl(var(--clr-neutral-300));
 
     background-color: var(--p-background-color);
-    padding-block: 8rem 2.5rem;
+    padding-block: 4rem 3.5rem;
 
     #{$theme-dark} & {
         --p-background-color: hsl(var(--clr-primary-400));
@@ -44,5 +44,16 @@
 
     #{$theme-dark} & {
         --p-link-cover-hover: hsl(var(--clr-neutral-100));
+    }
+}
+
+.footer-copywrite {
+    --p-text-color: hsl(var(--clr-neutral-700), 30%);
+
+    font-size: $fs-body-sm; 
+    color: var(--p-text-color);
+
+    #{$theme-dark} & {
+        --p-text-color: hsl(var(--clr-neutral-200), 30%);
     }
 }
