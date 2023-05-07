@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <title>Colby Crawford | Web Portfolio</title>
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Koulen&display=swap"
@@ -16,7 +16,6 @@
 
 
 <body>
-
     <!-- Screen reader skip to main content -->
     <a href="#main" class="skip-to-main-content" aria-label="Skip to main content">Click to skip to main content</a>
 
@@ -304,18 +303,24 @@
                     </div>
                 </div>
                 <form class="contact-form card" name="contact" action="POST" data-netlify="true" onsubmit="submit">
-                    <h3 class="contact-form-title heading-ms has-letter-spacing-lg is-ff-secondary">Leave me a message
+                    <h3 class="contact-form-title heading-ms has-letter-spacing-lg is-ff-secondary">
+                        Leave me a message
                     </h3>
+
                     <label for="inputName" hidden>Name</label>
                     <input id="inputName" type="text" placeholder="Name">
+
                     <label for="inputName" hidden>Email</label>
                     <input id="inputEmail" type="email" placeholder="Email">
+
                     <label for="inputName" hidden>Phone</label>
-                    <input id="inputPhone" type="phone" placeholder="Phone">
+                    <input id="inputPhone" type="text" placeholder="Phone">
+
                     <label for="inputMessage" hidden>Message</label>
                     <textarea name="message" id="inputMessage" placeholder="Type your message here..."></textarea>
-                    <button href="#" class="contact-form-btn btn-primary-icon">
-                        <p>Send</p>
+
+                    <button class="contact-form-btn btn-primary-icon">
+                        <span>Send</span>
                         <span class="icon-send"></span>
                     </button>
                 </form>
