@@ -884,8 +884,15 @@ h6 {
   .skill-title {
     margin-block-end: 0.75rem;
   }
-  #about {
-    margin-block-end: 10rem;
+  @media only screen and (max-width: 767.99px), only screen and (min-width: 768px) and (max-width: 1198.99px) {
+    #about {
+      margin-block-end: 7rem;
+    }
+  }
+  @media only screen and (min-width: 1199px) {
+    #about {
+      margin-block-end: 10rem;
+    }
   }
   #about-title {
     margin-block-end: 1.5rem;

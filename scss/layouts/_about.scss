@@ -1,7 +1,12 @@
 @use '../abstracts' as *;
 
 #about {
-    margin-block-end: 10rem;
+    @media #{$break1}, #{$break2} {
+        margin-block-end: 7rem;
+    }
+    @media #{$break3open} {
+        margin-block-end: 10rem;
+    }
 }
 
 #about-title { margin-block-end: 1.5rem; }
