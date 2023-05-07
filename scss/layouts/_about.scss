@@ -2,7 +2,7 @@
 
 #about {
     @media #{$break1}, #{$break2} {
-        margin-block-end: 7rem;
+        margin-block-end: 6rem;
     }
     @media #{$break3open} {
         margin-block-end: 10rem;
