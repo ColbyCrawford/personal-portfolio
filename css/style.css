@@ -1410,7 +1410,7 @@ h6 {
   }
   .transition {
     display: block;
-    width: 100%;
+    inline-size: 100%;
   }
 }
 @layer utilities {
