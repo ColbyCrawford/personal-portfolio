@@ -68,6 +68,7 @@
         --p-svg-color: hsl(var(--clr-neutral-700), 12%);
 
         color: var(--p-svg-color);
+        inline-size: 100%;
 
         #{$theme-dark} & {
             --p-svg-color: hsl(var(--clr-primary-400));
@@ -148,7 +149,6 @@
             margin-block-end: 1rem;
         }
     }
-
 }
 
 .hero-body {
