@@ -1425,6 +1425,12 @@ h6 {
     display: block;
     inline-size: 100%;
   }
+  .transition.top-svg-margin {
+    margin-block-start: -0.0625rem;
+  }
+  .transition.btm-svg-margin {
+    margin-block-end: -0.0625rem;
+  }
 }
 @layer utilities {
   .u-overflow-y-hidden {
