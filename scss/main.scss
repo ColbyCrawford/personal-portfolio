@@ -11,22 +11,22 @@
 }
 
 @layer base {
-    @include meta.load-css('base');
+    @include meta.load-css('base/index');
 }
 
 @layer pages {
-    @include meta.load-css('pages');
+    @include meta.load-css('pages/index');
 }
 
 @layer layouts {
-    @include meta.load-css('layouts');
+    @include meta.load-css('layouts/index');
 }
 
 @layer modules {
-    @include meta.load-css('modules');
+    @include meta.load-css('modules/index');
 }
 
 @layer utilities {
-    @include meta.load-css('utilities');
+    @include meta.load-css('utilities/index');
 }
 
