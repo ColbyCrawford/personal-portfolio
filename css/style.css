@@ -1,6 +1,6 @@
 @charset "UTF-8";
-@layer normalize, reset, abstracts, base, pages, layouts, modules, utilities;
-@layer normalize {
+/* @layer normalize, reset, abstracts, base, pages, layouts, modules, utilities; */
+/* @layer normalize { */
   /*! normalize.css v8.0.1 | MIT License | github.com/necolas/normalize.css */
   /* Document
      ========================================================================== */
@@ -280,8 +280,8 @@ select { /* 1 */
   [hidden] {
     display: none;
   }
-}
-@layer reset {
+/* } */
+/* @layer reset { */
   /***
       The new CSS reset - version 1.8.4 (last updated 14.2.2023)
       GitHub page: https://github.com/elad2412/the-new-css-reset
@@ -368,8 +368,8 @@ select { /* 1 */
   :where(dialog:modal) {
     all: revert;
   }
-}
-@layer base {
+/* } */
+/* @layer base { */
   body {
     --p-text-color: hsl(var(--clr-neutral-700), 70%);
     --p-background-color: hsl(var(--clr-neutral-200));
@@ -392,7 +392,7 @@ h6 {
     --p-text-color: hsl(var(--clr-neutral-700), 80%);
     color: var(--p-text-color);
   }
-  .theme-dark h1,
+.theme-dark h1,
 .theme-dark h2,
 .theme-dark h3,
 .theme-dark h4,
@@ -539,8 +539,8 @@ h6 {
   body {
     position: relative;
   }
-}
-@layer pages {
+/* } */
+/* @layer pages { */
   @media only screen and (max-width: 767.99px), only screen and (min-width: 768px) and (max-width: 1198.99px) {
     #hero {
       margin-block-end: 10rem;
@@ -712,8 +712,8 @@ h6 {
   .theme-dark .project-transition {
     --p-transition-color: hsl(var(--clr-primary-600));
   }
-}
-@layer layouts {
+/* } */
+/* @layer layouts { */
   @media only screen and (max-width: 767.99px), only screen and (min-width: 768px) {
     #navigation {
       margin-block-end: 3.5rem;
@@ -1257,8 +1257,8 @@ h6 {
   .project-link:hover > .card, .project-link:focus-visible > .card {
     box-shadow: 0 0.25rem 1rem 0.5rem hsl(var(--clr-neutral-700), 15%);
   }
-}
-@layer modules {
+/* } */
+/* @layer modules { */
   .logo {
     --p-text-color: hsl(var(--clr-neutral-700), 80%);
     position: relative;
@@ -1468,8 +1468,8 @@ h6 {
   .transition.btm-svg-margin {
     margin-block-end: -0.0625rem;
   }
-}
-@layer utilities {
+/* } */
+/* @layer utilities { */
   .u-overflow-y-hidden {
     overflow-y: hidden;
   }
@@ -1488,4 +1488,4 @@ h6 {
       display: none !important;
     }
   }
-}
+/* } */
