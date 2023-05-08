@@ -15,7 +15,15 @@
 
     /* state colors */
     --clr-focus: 223, 86%, 75%;
+
+
+    @media (prefers-color-scheme: dark) {
+        --clr-neutral-700: 0, 0%, 100%;
+    }
+
 }
+
+
 
 html, body {
     overflow-x: hidden;
