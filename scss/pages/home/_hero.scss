@@ -1,8 +1,11 @@
 @use '../../abstracts' as *;
 
 #hero {
+    @media #{$break1} {
+        margin-block-end: 6.5rem;
+    }
 
-    @media #{$break1}, #{$break2} {
+    @media #{$break2} {
         margin-block-end: 10rem;
     }
 
