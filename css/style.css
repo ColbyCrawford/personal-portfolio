@@ -736,7 +736,7 @@ body {
 
 @media only screen and (max-width: 767.99px), only screen and (min-width: 768px) and (max-width: 1198.99px) {
   .hero-graphic {
-    margin-block-end: 2.5rem;
+    margin-block-end: 3rem;
   }
 }
 .hero-graphic-tag {

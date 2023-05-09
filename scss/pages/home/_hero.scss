@@ -101,7 +101,7 @@
     max-inline-size: pxToRem(400);
 
     @media #{$break1}, #{$break2} {
-        margin-block-end: 2.5rem;
+        margin-block-end: 3rem;
     }
 }
  
@@ -198,7 +198,7 @@
 
 .hero-body {
     margin-block-start: 1.5rem;
-    
+
     @media #{$break1}, #{$break2} {
         margin-block-end: 2.5rem;
     }
