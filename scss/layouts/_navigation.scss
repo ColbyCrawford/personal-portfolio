@@ -106,9 +106,17 @@
 
     &:is(:focus-visible, :hover) {
         &:where(:not(#{$disabled})) {
-            --p-icon-color: hsl(var(--clr-neutral-100));
+            --p-icon-color: hsl(var(--clr-neutral-700));
 
             color: var(--p-icon-color);
+
+            #{$theme-light} & {
+                --p-icon-color: hsl(var(--clr-neutral-700));
+            }
+
+            #{$theme-dark} & {
+                --p-icon-color: hsl(var(--clr-neutral-100));
+            }
         }
     }
 
@@ -123,7 +131,9 @@
 }
 
 #menu-open-btn {
-    @media #{$break2open} { display: none; }
+    @media #{$break2open} { 
+        display: none; 
+    }
 }
 
 #menu-close-btn {
