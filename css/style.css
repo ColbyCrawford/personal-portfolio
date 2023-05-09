@@ -887,11 +887,6 @@ body {
     --p-transition-color: hsl(var(--clr-primary-600));
   }
 }
-@media only screen and (max-width: 767.99px) {
-  #navigation {
-    margin-block-end: 3.5rem;
-  }
-}
 @media only screen and (min-width: 768px) {
   #navigation {
     margin-block-end: 3.5rem;
