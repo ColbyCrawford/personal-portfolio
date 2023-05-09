@@ -1,7 +1,12 @@
 @use '../abstracts' as *;
 
 #navigation {
-    @media #{$break1}, #{$break2open} { margin-block-end: 3.5rem; }
+    @media #{$break1} {
+        margin-block-end: 2.5rem; 
+    }
+    @media #{$break2open} { 
+        margin-block-end: 3.5rem; 
+    }
 }
 
 .l-navigation {
