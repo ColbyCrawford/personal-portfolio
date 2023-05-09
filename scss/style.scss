@@ -26,7 +26,7 @@
     @include meta.load-css('modules/index');
 // }
 
-@layer utilities {
+// @layer utilities {
     @include meta.load-css('utilities/index');
-}
+// }
 
