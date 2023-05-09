@@ -23,10 +23,9 @@
     justify-content: center;
     gap: 4.5rem;
 
-    @media #{$break1},
-    #{$break2} {
+    @media #{$break1}, #{$break2} {
         flex-direction: column-reverse;
-        gap: 3rem;
+        row-gap: 10rem;
     }
 
     @media #{$break3open} {
@@ -103,7 +102,6 @@
 .hero-graphic {
     position: relative;
     max-inline-size: pxToRem(400);
-    aspect-ratio: 1 / 1;
 }
  
 .hero-graphic-tag {

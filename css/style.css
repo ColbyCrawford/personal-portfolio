@@ -665,7 +665,7 @@ body {
 @media only screen and (max-width: 767.99px), only screen and (min-width: 768px) and (max-width: 1198.99px) {
   .l-hero {
     flex-direction: column-reverse;
-    gap: 3rem;
+    row-gap: 10rem;
   }
 }
 @media only screen and (min-width: 1199px) {
@@ -739,7 +739,6 @@ body {
 .hero-graphic {
   position: relative;
   max-inline-size: 25rem;
-  aspect-ratio: 1/1;
 }
 
 .hero-graphic-tag {
