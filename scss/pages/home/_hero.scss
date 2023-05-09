@@ -104,10 +104,6 @@
     position: relative;
     max-inline-size: pxToRem(400);
     aspect-ratio: 1 / 1;
-
-    // @supports not (aspect-ratio: 1 / 1) {
-    //     padding-block-start: 100%;
-    // } 
 }
  
 .hero-graphic-tag {
@@ -161,7 +157,6 @@
     inline-size: 100%;
     object-fit: cover;
     border-radius: 100vh;
-
     border: 12px solid var(--p-border-color);
 
 
