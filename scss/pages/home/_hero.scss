@@ -24,7 +24,7 @@
 
     @media #{$break1}, #{$break2} {
         flex-direction: column-reverse;
-        row-gap: 10rem;
+        // row-gap: 10rem;
     }
 
     @media #{$break3open} {
