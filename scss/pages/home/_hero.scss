@@ -21,7 +21,6 @@
     display: flex;
     align-items: center;
     justify-content: center;
-    gap: 4.5rem;
 
     @media #{$break1}, #{$break2} {
         flex-direction: column-reverse;
