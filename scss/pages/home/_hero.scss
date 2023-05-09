@@ -23,7 +23,6 @@
 
     @media #{$break1}, #{$break2} {
         flex-direction: column-reverse;
-        // row-gap: 10rem;
     }
 
     @media #{$break3open} {
@@ -100,6 +99,10 @@
 .hero-graphic {
     position: relative;
     max-inline-size: pxToRem(400);
+
+    @media #{$break1}, #{$break2} {
+        margin-block-end: 2.5rem;
+    }
 }
  
 .hero-graphic-tag {
@@ -194,6 +197,8 @@
 }
 
 .hero-body {
+    margin-block-start: 1.5rem;
+    
     @media #{$break1}, #{$break2} {
         margin-block-end: 2.5rem;
     }
