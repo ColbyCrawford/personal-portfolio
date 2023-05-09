@@ -2,8 +2,7 @@
 
 #hero {
 
-    @media #{$break1},
-    #{$break2} {
+    @media #{$break1}, #{$break2} {
         margin-block-end: 10rem;
     }
 
@@ -195,15 +194,11 @@
 }
 
 .hero-body {
-    padding-block-start: 1.25rem;
-
-    @media #{$break1},
-    #{$break2} {
-        padding-block-end: 2.5rem;
+    @media #{$break1}, #{$break2} {
+        margin-block-end: 2.5rem;
     }
 
     @media #{$break3open} {
-        padding-block-end: 3.5rem;
+        margin-block-end: 3.5rem;
     }
-
 }
