@@ -5,7 +5,7 @@
     margin-inline: auto;
 
     @media #{$break1} { 
-        --p-container-margin: 1.5rem;
+        --p-container-margin: 1rem;
         width: calc(100% - (2 * var(--p-container-margin))); 
     }
     @media #{$break2open} { 
