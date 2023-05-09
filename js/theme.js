@@ -1,17 +1,51 @@
-const themeToggle = document.getElementById("theme-toggle");
-const htmlEl = document.querySelector("html");
+//determines if the user has a set theme
+function detectColorScheme(){
+    var theme="light";    //default to light
 
-toggleThemes();
-
-themeToggle.addEventListener("click", e => {
-    toggleThemes();
-})
-
-
-function toggleThemes() {
-    if(themeToggle.checked) {
-        htmlEl.classList.add("theme-dark");
-    } else {
-        htmlEl.classList.remove("theme-dark");
+    //local storage is used to override OS theme settings
+    if(localStorage.getItem("theme")){
+        if(localStorage.getItem("theme") == "dark"){
+            var theme = "dark";
+        }
+    } else if(!window.matchMedia) {
+        //matchMedia method not supported
+        return false;
+    } else if(window.matchMedia("(prefers-color-scheme: dark)").matches) {
+        //OS theme setting detected as dark
+        var theme = "dark";
     }
+
+    //dark theme preferred, set document with a `data-theme` attribute
+    if (theme=="dark") {
+         document.documentElement.classList.add("theme-dark");
+    } else {
+        document.documentElement.classList.add("theme-light")
+    }
+}
+detectColorScheme();
+
+//identify the toggle switch HTML element
+const toggleSwitch = document.getElementById('theme-toggle');
+
+//function that changes the theme, and sets a localStorage variable to track the theme between page loads
+function switchTheme(e) {
+    if (e.target.checked) {
+        localStorage.setItem('theme', 'dark');
+        document.documentElement.classList.remove("theme-light");
+        document.documentElement.classList.add('theme-dark');
+        toggleSwitch.checked = true;
+    } else {
+        localStorage.setItem('theme', 'light');
+        document.documentElement.classList.remove('theme-dark');
+        document.documentElement.classList.add("theme-light");
+        toggleSwitch.checked = false;
+    }    
+}
+
+//listener for changing themes
+toggleSwitch.addEventListener('change', switchTheme, false);
+
+//pre-check the dark-theme checkbox if dark-theme is set
+if (document.documentElement.classList.contains("theme-dark")) {
+    toggleSwitch.checked = true;
 }

@@ -12,8 +12,15 @@
     font-size: $fs-5;
     line-height: 1.33333;
     
-
-    #{$theme-dark} & { --p-text-color: hsl(var(--clr-neutral-200)); }
+    #{$theme-light} & { 
+        --p-text-color: hsl(var(--clr-neutral-700), 80%);
+    }
+    #{$theme-dark} & { 
+        --p-text-color: hsl(var(--clr-neutral-200)); 
+    }
+    @media #{$prefers-dark} { 
+        --p-text-color: hsl(var(--clr-neutral-200)); 
+    }
 
     &::after {
         --p-text-color: hsl(var(--clr-neutral-700), 60%);
@@ -23,7 +30,13 @@
         line-height: 1.1428;
         color: var(--p-text-color);
 
+        #{$theme-light} & {
+            --p-text-color: hsl(var(--clr-neutral-700), 60%);
+        }
         #{$theme-dark} & {
+            --p-text-color: hsl(var(--clr-neutral-200), 60%);
+        }
+        @media #{$prefers-dark} {
             --p-text-color: hsl(var(--clr-neutral-200), 60%);
         }
     }

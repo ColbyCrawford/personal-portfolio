@@ -43,7 +43,17 @@
         font-size: 1.5rem;
     }
 
+    #{$theme-light} & {
+        --p-text-color: hsl(var(--clr-neutral-700), 0.80);
+        --p-text-color-hover: hsl(var(--clr-neutral-700));
+    }
+
     #{$theme-dark} & {
+        --p-text-color: hsl(var(--clr-neutral-200));
+        --p-text-color-hover: hsl(var(--clr-neutral-100));
+    }
+
+    @media #{$prefers-dark} {
         --p-text-color: hsl(var(--clr-neutral-200));
         --p-text-color-hover: hsl(var(--clr-neutral-100));
     }

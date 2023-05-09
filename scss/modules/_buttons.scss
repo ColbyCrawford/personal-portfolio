@@ -39,7 +39,6 @@
             --p-button-color: var(--p-button-color-hover);
         }
     }
-
 }
 
 
@@ -62,7 +61,21 @@
         }
     }
 
+    #{$theme-light} & {
+        --p-text-color: hsl(var(--clr-neutral-700), 80%);
+        --p-button-color: transparent;
+        --p-border-color: hsl(var(--clr-neutral-700), 30%);
+        --p-button-color-hover: hsl(var(--clr-neutral-700), 5%);
+    }
+
     #{$theme-dark} & {
+        --p-text-color: hsl(var(--clr-neutral-200));
+        --p-border-color: hsl(var(--clr-neutral-200), 40%);
+        --p-button-color: hsl(var(--clr-neutral-200), 10%);
+        --p-button-color-hover: transparent;
+    }
+
+    @media #{$prefers-dark} {
         --p-text-color: hsl(var(--clr-neutral-200));
         --p-border-color: hsl(var(--clr-neutral-200), 40%);
         --p-button-color: hsl(var(--clr-neutral-200), 10%);

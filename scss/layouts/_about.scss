@@ -74,7 +74,18 @@
 
     @media #{$break2open} { inline-size: pxToRem(338); }
 
-    #{$theme-dark} & { --p-border-color: hsl(var(--clr-neutral-600)); }
+    #{$theme-light} & { 
+        --p-border-color: hsl(var(--clr-neutral-100));
+    }
+
+    #{$theme-dark} & { 
+        --p-border-color: hsl(var(--clr-neutral-600)); 
+    }
+
+    @media #{$prefers-dark} { 
+        --p-border-color: hsl(var(--clr-neutral-600)); 
+    }
+    
 }
 
 .about-graphic-img {

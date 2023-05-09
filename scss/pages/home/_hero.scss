@@ -1,9 +1,12 @@
 @use '../../abstracts' as *;
 
 #hero {
-    @media #{$break1}, #{$break2} {
+
+    @media #{$break1},
+    #{$break2} {
         margin-block-end: 10rem;
     }
+
     @media #{$break3open} {
         margin-block-end: 12rem;
     }
@@ -20,14 +23,15 @@
     justify-content: center;
     gap: 4.5rem;
 
-    @media #{$break1}, #{$break2} {
+    @media #{$break1},
+    #{$break2} {
         flex-direction: column-reverse;
         gap: 3rem;
     }
 
     @media #{$break3open} {
         gap: 4.5rem;
-        
+
         &::before {
             --p-background-color: hsl(var(--clr-neutral-700), 12%);
 
@@ -40,7 +44,15 @@
             background-color: var(--p-background-color);
             z-index: -1;
 
+            #{$theme-light} & {
+                --p-background-color: hsl(var(--clr-neutral-700), 12%);
+            }
+
             #{$theme-dark} & {
+                --p-background-color: hsl(var(--clr-primary-400));
+            }
+
+            @media #{$prefers-dark} {
                 --p-background-color: hsl(var(--clr-primary-400));
             }
         }
@@ -51,18 +63,20 @@
     position: absolute;
     z-index: -1;
 
-    @media #{$break1}, #{$break2} {
+    @media #{$break1},
+    #{$break2} {
         display: block;
         top: -9.5rem;
         inline-size: 100vw;
     }
+
     @media #{$break3open} {
         right: -10.25rem;
         top: -10.5rem;
     }
 
 
-    & > svg {
+    &>svg {
         --p-svg-color: hsl(var(--clr-neutral-300));
 
         color: var(--p-svg-color);
@@ -72,7 +86,15 @@
             block-size: 100%;
         }
 
+        #{$theme-light} & {
+            --p-svg-color: hsl(var(--clr-neutral-300));
+        }
+
         #{$theme-dark} & {
+            --p-svg-color: hsl(var(--clr-primary-400));
+        }
+
+        @media #{$prefers-dark} {
             --p-svg-color: hsl(var(--clr-primary-400));
         }
     }
@@ -102,12 +124,25 @@
         bottom: 0;
         left: 2.5rem;
     }
+
     &:nth-of-type(2) {
         top: 1.3rem;
         right: 0;
     }
 
+    #{$theme-light} & {
+        --p-text-color: hsl(var(--clr-primary-400), 65);
+        --p-border-color: var(--p-text-color);
+        --p-background-color: hsl(var(--clr-neutral-200));
+    }
+
     #{$theme-dark} & {
+        --p-text-color: hsl(var(--clr-neutral-200));
+        --p-border-color: hsl(var(--clr-neutral-200), 30%);
+        --p-background-color: hsl(var(--clr-neutral-600));
+    }
+
+    @media #{$prefers-dark} {
         --p-text-color: hsl(var(--clr-neutral-200));
         --p-border-color: hsl(var(--clr-neutral-200), 30%);
         --p-background-color: hsl(var(--clr-neutral-600));
@@ -126,14 +161,24 @@
     border-radius: 100vh;
     overflow: hidden;
 
+    #{$theme-light} & {
+        --p-border-color: hsl(var(--clr-neutral-100));
+    }
+
     #{$theme-dark} & {
+        --p-border-color: hsl(var(--clr-neutral-600));
+    }
+
+    @media #{$prefers-dark} {
         --p-border-color: hsl(var(--clr-neutral-600));
     }
 }
 
 .hero-text {
     max-width: pxToRem(700);
-    @media #{$break1}, #{$break2} {
+
+    @media #{$break1},
+    #{$break2} {
         text-align: center;
     }
 
@@ -141,7 +186,7 @@
     .btn-secondary {
         @media #{$break1} {
             inline-size: 100%;
-      }
+        }
     }
 
     .btn-secondary {
@@ -155,15 +200,14 @@
 
 .hero-body {
     padding-block-start: 1.25rem;
-    @media #{$break1}, #{$break2} {
+
+    @media #{$break1},
+    #{$break2} {
         padding-block-end: 2.5rem;
     }
+
     @media #{$break3open} {
         padding-block-end: 3.5rem;
     }
-    
+
 }
-
-
-
-

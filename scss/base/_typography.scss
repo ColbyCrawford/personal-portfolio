@@ -23,8 +23,17 @@ body {
     color: var(--p-text-color);
     background-color: var(--p-background-color);
 
+    #{$theme-light} & {
+        --p-text-color: hsl(var(--clr-neutral-700), 70%);
+        --p-background-color: hsl(var(--clr-neutral-200));
+    }
 
     #{$theme-dark} & {
+        --p-text-color: hsl(var(--clr-neutral-200), 70%);
+        --p-background-color: hsl(var(--clr-neutral-700));
+    }
+
+    @media #{$prefers-dark} {
         --p-text-color: hsl(var(--clr-neutral-200), 70%);
         --p-background-color: hsl(var(--clr-neutral-700));
     }
@@ -40,7 +49,16 @@ h6 {
 
     color: var(--p-text-color);
 
+    #{$theme-light} & {
+        --p-text-color: hsl(var(--clr-neutral-700), 80%);
+    }
+
     #{$theme-dark} & {
+        --p-text-color: hsl(var(--clr-neutral-200));
+        --p-background-color: hsl(var(--clr-neutral-700));
+    }
+
+    @media #{$prefers-dark} { 
         --p-text-color: hsl(var(--clr-neutral-200));
         --p-background-color: hsl(var(--clr-neutral-700));
     }

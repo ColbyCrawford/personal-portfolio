@@ -6,8 +6,15 @@
     border-radius: 0.5rem;
     background-color: var(--p-background-color);
 
+    #{$theme-light} & {
+        --p-background-color: hsl(var(--clr-neutral-100));
+    }
+
     #{$theme-dark} & {
         --p-background-color: hsl(var(--clr-neutral-600));
     }
 
+    @media #{$prefers-dark} {
+        --p-background-color: hsl(var(--clr-neutral-600));
+    }
 }

@@ -28,6 +28,8 @@ $size-160: 10rem;
 
 // THEME
 $theme-dark: ".theme-dark";
+$prefers-dark: "(prefers-color-scheme: dark)";
+$theme-light: ".theme-light";
 
 // DISABLED
 $disabled: ":disabled, .is-disabled";
