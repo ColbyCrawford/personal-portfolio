@@ -103,8 +103,8 @@
 
     @media #{$break1}, #{$break2} {
         margin-block-end: 3rem;
-        width: 343px;
-        height: 343px;
+        max-width: 343px;
+        max-height: 343px;
     }
     @media #{$break2open} {
         width: 400px;
