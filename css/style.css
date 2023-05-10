@@ -658,7 +658,7 @@ body {
   position: relative;
   display: flex;
   align-items: center;
-  justify-content: center;
+  justify-content: space-between;
 }
 
 @media only screen and (max-width: 767.99px), only screen and (min-width: 768px) and (max-width: 1198.99px) {
@@ -667,9 +667,6 @@ body {
   }
 }
 @media only screen and (min-width: 1199px) {
-  .l-hero {
-    gap: 4.5rem;
-  }
   .l-hero::before {
     --p-background-color: hsl(var(--clr-neutral-700), 12%);
     content: "";
@@ -736,7 +733,6 @@ body {
 }
 .hero-graphic {
   position: relative;
-  max-inline-size: 25rem;
 }
 
 @media only screen and (max-width: 767.99px), only screen and (min-width: 768px) and (max-width: 1198.99px) {
@@ -791,10 +787,9 @@ body {
 .hero-img {
   --p-border-color: hsl(var(--clr-neutral-100));
   display: block;
-  inline-size: 100%;
-  object-fit: cover;
   border-radius: 100vh;
-  border: 12px solid var(--p-border-color);
+  outline: 12px solid var(--p-border-color);
+  outline-offset: -12px;
 }
 
 .theme-light .hero-img {
@@ -810,13 +805,14 @@ body {
     --p-border-color: hsl(var(--clr-neutral-600));
   }
 }
-.hero-text {
-  max-width: 43.75rem;
-}
-
 @media only screen and (max-width: 767.99px), only screen and (min-width: 768px) and (max-width: 1198.99px) {
   .hero-text {
     text-align: center;
+  }
+}
+@media only screen and (min-width: 1199px) {
+  .hero-text {
+    flex-basis: 55%;
   }
 }
 @media only screen and (max-width: 767.99px) {
@@ -1540,6 +1536,9 @@ body {
 }
 .projects-list {
   display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(340px, 1fr));
+  gap: 2rem;
+  margin-block-start: 2rem;
 }
 
 @media only screen and (max-width: 767.99px) {
@@ -1549,9 +1548,7 @@ body {
 }
 @media only screen and (min-width: 768px) {
   .projects-list {
-    grid-template-columns: repeat(auto-fill, minmax(340px, 1fr));
     gap: 2rem;
-    margin-block-start: 2rem;
   }
 }
 .project-card {
@@ -1573,6 +1570,8 @@ body {
   object-fit: cover;
   border-radius: 0.5rem;
   inline-size: 100%;
+  aspect-ratio: 16/9.5;
+  block-size: auto;
   margin-block-end: 1.5rem;
 }
 

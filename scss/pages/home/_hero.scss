@@ -22,14 +22,13 @@
     position: relative;
     display: flex;
     align-items: center;
-    justify-content: center;
+    justify-content: space-between;
 
     @media #{$break1}, #{$break2} {
         flex-direction: column-reverse;
     }
 
     @media #{$break3open} {
-        gap: 4.5rem;
 
         &::before {
             --p-background-color: hsl(var(--clr-neutral-700), 12%);
@@ -62,8 +61,7 @@
     position: absolute;
     z-index: -1;
 
-    @media #{$break1},
-    #{$break2} {
+    @media #{$break1}, #{$break2} {
         display: block;
         top: -9.5rem;
         inline-size: 100vw;
@@ -101,7 +99,6 @@
 
 .hero-graphic {
     position: relative;
-    max-inline-size: pxToRem(400);
 
     @media #{$break1}, #{$break2} {
         margin-block-end: 3rem;
@@ -156,11 +153,9 @@
     --p-border-color: hsl(var(--clr-neutral-100));
 
     display: block;
-    inline-size: 100%;
-    object-fit: cover;
     border-radius: 100vh;
-    border: 12px solid var(--p-border-color);
-
+    outline: 12px solid var(--p-border-color);
+    outline-offset: -12px;
 
     #{$theme-light} & {
         --p-border-color: hsl(var(--clr-neutral-100));
@@ -176,11 +171,12 @@
 }
 
 .hero-text {
-    max-width: pxToRem(700);
-
-    @media #{$break1},
-    #{$break2} {
+    @media #{$break1}, #{$break2} {
         text-align: center;
+    }
+
+    @media #{$break3open} {
+        flex-basis: 55%;
     }
 
     .btn-primary,
