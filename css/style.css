@@ -757,7 +757,6 @@ body {
 }
 .hero-graphic {
   position: relative;
-  aspect-ratio: 1/1;
 }
 
 @media only screen and (max-width: 767.99px), only screen and (min-width: 768px) and (max-width: 1198.99px) {
@@ -812,8 +811,6 @@ body {
 .hero-img {
   --p-border-color: hsl(var(--clr-neutral-100));
   display: block;
-  block-size: auto;
-  inline-size: 100%;
   border-radius: 100vh;
   outline: 12px solid var(--p-border-color);
   outline-offset: -12px;
