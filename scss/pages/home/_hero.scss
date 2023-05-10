@@ -101,14 +101,16 @@
     position: relative;
     outline: 2px solid greenyellow;
 
+    @media #{$break1} {
+        width: pxToRem(343);
+        height: pxToRem(343);
+    }
     @media #{$break1}, #{$break2} {
         margin-block-end: 3rem;
-        max-width: 343px;
-        max-height: 343px;
     }
     @media #{$break2open} {
-        width: 400px;
-        height: 400px;
+        width: pxToRem(400);
+        height: pxToRem(400);
     }
 }
  
