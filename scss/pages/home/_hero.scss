@@ -99,6 +99,7 @@
 
 .hero-graphic {
     position: relative;
+    aspect-ratio: 1 / 1;
 
     @media #{$break1}, #{$break2} {
         margin-block-end: 3rem;
@@ -153,6 +154,8 @@
     --p-border-color: hsl(var(--clr-neutral-100));
 
     display: block;
+    block-size: auto;
+    inline-size: 100%;
     border-radius: 100vh;
     outline: 12px solid var(--p-border-color);
     outline-offset: -12px;
