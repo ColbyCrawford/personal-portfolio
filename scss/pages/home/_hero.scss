@@ -102,8 +102,8 @@
     outline: 2px solid greenyellow;
 
     @media #{$break1} {
-        width: pxToRem(343);
-        height: pxToRem(343);
+        max-width: pxToRem(343);
+        max-height: pxToRem(343);
     }
     @media #{$break1}, #{$break2} {
         margin-block-end: 3rem;
