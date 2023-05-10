@@ -101,16 +101,8 @@
     position: relative;
     outline: 2px solid greenyellow;
 
-    @media #{$break1} {
-        max-width: pxToRem(343);
-        max-height: pxToRem(343);
-    }
     @media #{$break1}, #{$break2} {
         margin-block-end: 3rem;
-    }
-    @media #{$break2open} {
-        width: pxToRem(400);
-        height: pxToRem(400);
     }
 }
  
@@ -163,7 +155,7 @@
 
     display: block;
     border-radius: 100vh;
-    inline-size: 100%;
+    max-inline-size: 100%;
     block-size: auto;
     border: 12px solid var(--p-border-color);
 
