@@ -757,11 +757,20 @@ body {
 }
 .hero-graphic {
   position: relative;
+  outline: 2px solid greenyellow;
 }
 
 @media only screen and (max-width: 767.99px), only screen and (min-width: 768px) and (max-width: 1198.99px) {
   .hero-graphic {
     margin-block-end: 3rem;
+    width: 343px;
+    height: 343px;
+  }
+}
+@media only screen and (min-width: 768px) {
+  .hero-graphic {
+    width: 400px;
+    height: 400px;
   }
 }
 .hero-graphic-tag {
@@ -812,8 +821,9 @@ body {
   --p-border-color: hsl(var(--clr-neutral-100));
   display: block;
   border-radius: 100vh;
-  outline: 12px solid var(--p-border-color);
-  outline-offset: -12px;
+  inline-size: 100%;
+  block-size: auto;
+  border: 12px solid var(--p-border-color);
 }
 
 .theme-light .hero-img {

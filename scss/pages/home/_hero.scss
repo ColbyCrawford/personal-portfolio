@@ -99,9 +99,16 @@
 
 .hero-graphic {
     position: relative;
+    outline: 2px solid greenyellow;
 
     @media #{$break1}, #{$break2} {
         margin-block-end: 3rem;
+        width: 343px;
+        height: 343px;
+    }
+    @media #{$break2open} {
+        width: 400px;
+        height: 400px;
     }
 }
  
@@ -154,8 +161,9 @@
 
     display: block;
     border-radius: 100vh;
-    outline: 12px solid var(--p-border-color);
-    outline-offset: -12px;
+    inline-size: 100%;
+    block-size: auto;
+    border: 12px solid var(--p-border-color);
 
     #{$theme-light} & {
         --p-border-color: hsl(var(--clr-neutral-100));
