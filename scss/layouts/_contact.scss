@@ -13,7 +13,7 @@
 
     @media #{$break1},
     #{$break2} {
-        margin-block-end: 1rem;
+        margin-block-end: 2rem;
     }
 
     @media #{$break3open} {
@@ -49,6 +49,7 @@
     @media #{$break1}, #{$break2} {
         flex-wrap: wrap;
         column-gap: 2rem;
+        row-gap: 1rem;
     }
 
     @media #{$break3open} {
@@ -77,6 +78,18 @@
 
 .contact-form {
     inline-size: 100%;
+
+    @media #{$break1} {
+        padding: 1.5rem;
+    }
+
+    @media #{$break2open} {
+        padding: 2rem 3rem;
+    }
+
+    @media #{$break3open} {
+        max-inline-size: pxToRem(540);
+    }
 
     &-title {
         text-align: center;
@@ -154,17 +167,5 @@
     textarea {
         margin-block-end: 1.5rem;
         min-block-size: pxToRem(144);
-    }
-
-    @media #{$break1} {
-        padding: 2rem;
-    }
-
-    @media #{$break2open} {
-        padding: 2rem 3rem;
-    }
-
-    @media #{$break3open} {
-        max-inline-size: pxToRem(540);
     }
 }

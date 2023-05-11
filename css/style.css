@@ -872,7 +872,7 @@ body {
 #projects {
   --p-background-color: hsl(var(--clr-primary-200));
   background-color: var(--p-background-color);
-  padding-block-end: 4rem;
+  padding-block: 4rem;
 }
 
 .theme-light #projects {
@@ -1272,7 +1272,7 @@ body {
 
 @media only screen and (max-width: 767.99px), only screen and (min-width: 768px) and (max-width: 1198.99px) {
   #contact-title {
-    margin-block-end: 1rem;
+    margin-block-end: 2rem;
   }
 }
 @media only screen and (min-width: 1199px) {
@@ -1308,6 +1308,7 @@ body {
   .contact-info {
     flex-wrap: wrap;
     column-gap: 2rem;
+    row-gap: 1rem;
   }
 }
 @media only screen and (min-width: 1199px) {
@@ -1340,6 +1341,21 @@ body {
   inline-size: 100%;
 }
 
+@media only screen and (max-width: 767.99px) {
+  .contact-form {
+    padding: 1.5rem;
+  }
+}
+@media only screen and (min-width: 768px) {
+  .contact-form {
+    padding: 2rem 3rem;
+  }
+}
+@media only screen and (min-width: 1199px) {
+  .contact-form {
+    max-inline-size: 33.75rem;
+  }
+}
 .contact-form-title {
   text-align: center;
 }
@@ -1439,21 +1455,6 @@ body {
   min-block-size: 9rem;
 }
 
-@media only screen and (max-width: 767.99px) {
-  .contact-form {
-    padding: 2rem;
-  }
-}
-@media only screen and (min-width: 768px) {
-  .contact-form {
-    padding: 2rem 3rem;
-  }
-}
-@media only screen and (min-width: 1199px) {
-  .contact-form {
-    max-inline-size: 33.75rem;
-  }
-}
 #footer {
   --p-background-color: hsl(var(--clr-neutral-300));
   background-color: var(--p-background-color);

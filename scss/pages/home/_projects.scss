@@ -4,7 +4,7 @@
     --p-background-color: hsl(var(--clr-primary-200));
 
     background-color: var(--p-background-color); 
-    padding-block-end: 4rem;
+    padding-block: 4rem;
 
     #{$theme-light} & {
         --p-background-color: hsl(var(--clr-primary-200));
@@ -25,6 +25,7 @@
     --p-transition-color: hsl(var(--clr-primary-200));
 
     color: var(--p-transition-color);
+
 
     #{$theme-light} & {
         --p-transition-color: hsl(var(--clr-primary-200));
