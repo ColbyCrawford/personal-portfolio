@@ -1271,7 +1271,7 @@ body {
 
 @media only screen and (max-width: 767.99px), only screen and (min-width: 768px) and (max-width: 1198.99px) {
   #contact-title {
-    margin-block-end: 2rem;
+    margin-block-end: 2.5rem;
   }
 }
 @media only screen and (min-width: 1199px) {
@@ -1288,7 +1288,7 @@ body {
     flex-direction: column;
   }
 }
-@media only screen and (min-width: 768px) {
+@media only screen and (min-width: 1199px) {
   .l-contact {
     justify-content: space-between;
     gap: 4em;
@@ -1296,7 +1296,7 @@ body {
 }
 @media only screen and (max-width: 767.99px), only screen and (min-width: 768px) and (max-width: 1198.99px) {
   .contact-text {
-    margin-block-end: 2rem;
+    margin-block-end: 1.5rem;
   }
 }
 .contact-info {
