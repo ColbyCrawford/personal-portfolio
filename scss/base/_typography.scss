@@ -24,34 +24,19 @@ body {
     background-color: var(--p-background-color);
 
     #{$theme-light} & {
-        color: hsl(var(--clr-neutral-700), 70%);
-        background-color: hsl(var(--clr-neutral-200));
+        --p-text-color: hsl(var(--clr-neutral-700), 70%);
+        --p-background-color: hsl(var(--clr-neutral-200));
     }
 
     #{$theme-dark} & {
-        color: hsl(var(--clr-neutral-200), 70%);
-        background-color: hsl(var(--clr-neutral-700));
+        --p-text-color: hsl(var(--clr-neutral-200), 70%);
+        --p-background-color: hsl(var(--clr-neutral-700));
     }
 
     @media #{$prefers-dark} {
-        color: hsl(var(--clr-neutral-200), 70%);
-        background-color: hsl(var(--clr-neutral-700));
+        --p-text-color: hsl(var(--clr-neutral-200), 70%);
+        --p-background-color: hsl(var(--clr-neutral-700));
     }
-
-    // #{$theme-light} & {
-    //     --p-text-color: hsl(var(--clr-neutral-700), 70%);
-    //     --p-background-color: hsl(var(--clr-neutral-200));
-    // }
-
-    // #{$theme-dark} & {
-    //     --p-text-color: hsl(var(--clr-neutral-200), 70%);
-    //     --p-background-color: hsl(var(--clr-neutral-700));
-    // }
-
-    // @media #{$prefers-dark} {
-    //     --p-text-color: hsl(var(--clr-neutral-200), 70%);
-    //     --p-background-color: hsl(var(--clr-neutral-700));
-    // }
 }
 
 h1, 

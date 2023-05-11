@@ -444,19 +444,19 @@ body {
 }
 
 .theme-light body {
-  color: hsl(var(--clr-neutral-700), 70%);
-  background-color: hsl(var(--clr-neutral-200));
+  --p-text-color: hsl(var(--clr-neutral-700), 70%);
+  --p-background-color: hsl(var(--clr-neutral-200));
 }
 
 .theme-dark body {
-  color: hsl(var(--clr-neutral-200), 70%);
-  background-color: hsl(var(--clr-neutral-700));
+  --p-text-color: hsl(var(--clr-neutral-200), 70%);
+  --p-background-color: hsl(var(--clr-neutral-700));
 }
 
 @media (prefers-color-scheme: dark) {
   body {
-    color: hsl(var(--clr-neutral-200), 70%);
-    background-color: hsl(var(--clr-neutral-700));
+    --p-text-color: hsl(var(--clr-neutral-200), 70%);
+    --p-background-color: hsl(var(--clr-neutral-700));
   }
 }
 h1,
