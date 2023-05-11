@@ -653,6 +653,7 @@ h6 {
 
 html, body {
   overflow-x: hidden;
+  block-size: 100%;
 }
 
 body {
@@ -1198,7 +1199,7 @@ body {
 }
 
 .about-text > p:last-of-type {
-  margin-block-end: 3.5rem;
+  margin-block-end: 2rem;
 }
 
 .about-graphic {
@@ -1865,7 +1866,6 @@ body {
   position: fixed;
   z-index: 100;
   inset: 0;
-  background-color: clr(neutral, darker, 0.75);
   backdrop-filter: blur(0.5rem);
 }
 
