@@ -737,6 +737,10 @@ body {
   color: var(--p-svg-color);
 }
 
+.hero-bg > svg:is(.is-only-mobile, .is-only-tablet) {
+  inline-size: 100%;
+}
+
 .theme-light .hero-bg > svg {
   --p-svg-color: hsl(var(--clr-neutral-300));
 }

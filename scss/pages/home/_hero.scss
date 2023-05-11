@@ -77,11 +77,10 @@
         --p-svg-color: hsl(var(--clr-neutral-300));
 
         color: var(--p-svg-color);
-        // inline-size: 100%;
 
-        // &.is-desktop-only {
-        //     block-size: 100%;
-        // }
+        &:is(.is-only-mobile, .is-only-tablet) {
+            inline-size: 100%;
+        }
 
         #{$theme-light} & {
             --p-svg-color: hsl(var(--clr-neutral-300));
