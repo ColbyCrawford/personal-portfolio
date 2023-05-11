@@ -1865,6 +1865,7 @@ body {
   position: fixed;
   z-index: 100;
   inset: 0;
+  background-color: red;
   backdrop-filter: blur(0.5rem);
   -webkit-backdrop-filter: blur(0.5rem);
 }
