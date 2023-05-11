@@ -155,8 +155,6 @@
 
     display: block;
     border-radius: 100vh;
-    inline-size: 100%;
-    block-size: auto;
     border: 12px solid var(--p-border-color);
 
     #{$theme-light} & {

@@ -95,13 +95,25 @@
                     <a href="#contact" class="btn-primary">Work with me</a>
                 </div>
                 <div class="hero-graphic">
-                    <img class="hero-img" 
-                         width="400" height="400"
+                    <!-- <img class="hero-img" 
+                         width="343" height="343"
                          srcset="assets/images/hero-img-mobile.jpg 343w, assets/images/hero-img-desktop.jpg 400w"
                          sizes="(max-width: 767.99px) 343px, (min-width: 768px) 400px"
                          src="assets/images/hero-img-mobile.jpg" 
                          loading="eager"
-                         alt="Colby smiling">
+                         alt="Colby smiling"> -->
+                    <picture>
+                        <source width="343" height="343"
+                                media="(max-width: 767.99px)" 
+                                srcset="assets/images/hero-img-mobile.jpg">
+                        <source width="400" height="400"
+                                media="(min-width: 768px)" 
+                                srcset="assets/images/hero-img-desktop.jpg">
+                        <img class="hero-img" 
+                             width="343" height="343"
+                             src="assets/images/hero-img-mobile.jpg" 
+                             alt="Colby smiling">
+                    </picture>
                     <p class="hero-graphic-tag">UX Designer</p>
                     <p class="hero-graphic-tag">Web Developer</p>
                 </div>
