@@ -1870,6 +1870,7 @@ body {
   -webkit-backdrop-filter: blur(0.5rem);
 }
 
+/* if backdrop support: very transparent and blurred */
 .toggle {
   --p-border-color: hsl(var(--clr-neutral-700), 70%);
   --p-border-color-hover: hsl(var(--clr-neutral-700));
