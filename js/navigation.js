@@ -31,7 +31,7 @@ function windowResize() {
 
 function toggleMenu() {
     body.classList.toggle('overlay-visible');
-    body.classList.toggle('u-overflow-y-hidden');
+    body.classList.toggle('no-scroll');
     navMenu.classList.toggle('is-open');
 }
 
