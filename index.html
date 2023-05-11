@@ -29,9 +29,6 @@
     <link rel="preload" href="assets/fonts/Koulen-Regular-kern-latin.woff2" as="font" type="font/woff2" crossorigin>
     <script src="js/fonts.js"></script>
 
-    <!-- hero-img -->
-    <!-- <link rel="preload" as="image" href="assets/images/hero-img-mobile.jpg" imagesrcset="assets/images/hero-img-mobile.jpg 343w, assets/images/hero-img-desktop.jpg 400w" imagesizes="(max-width: 767.99px) 343px, (min-width: 768px) 400px" /> -->
-
     <link rel="stylesheet" type="text/css" href="css/style.css">
 </head>
 
@@ -59,13 +56,13 @@
                         <a href="#contact" class="navigation-link link">Get in touch</a>
                     </li>
                     <li class="navigation-menu-item">
-                        <button id="menu-close-btn">
+                        <button id="menu-close-btn" aria-label="Close menu">
                             <span class="icon-close"></span>
                         </button>
                     </li>
                 </ul>
-                <input id="theme-toggle" class="toggle" type="checkbox">
-                <button id="menu-open-btn" aria-expanded="false">
+                <input id="theme-toggle" class="toggle" type="checkbox" aria-label="Close menu">
+                <button id="menu-open-btn" aria-expanded="false" aria-label="Open menu">
                     <span class="icon-menu"></span>
                 </button>
             </div>
@@ -95,13 +92,6 @@
                     <a href="#contact" class="btn-primary">Work with me</a>
                 </div>
                 <div class="hero-graphic">
-                    <!-- <img class="hero-img" 
-                         width="343" height="343"
-                         srcset="assets/images/hero-img-mobile.jpg 343w, assets/images/hero-img-desktop.jpg 400w"
-                         sizes="(max-width: 767.99px) 343px, (min-width: 768px) 400px"
-                         src="assets/images/hero-img-mobile.jpg" 
-                         loading="eager"
-                         alt="Colby smiling"> -->
                     <picture>
                         <source width="343" height="343"
                                 media="(max-width: 767.99px)" 
@@ -111,7 +101,8 @@
                                 srcset="assets/images/hero-img-desktop.jpg">
                         <img class="hero-img" 
                              width="343" height="343"
-                             src="assets/images/hero-img-mobile.jpg" 
+                             src="assets/images/hero-img-mobile.jpg"
+                             loading="eager" 
                              alt="Colby smiling">
                     </picture>
                     <p class="hero-graphic-tag">UX Designer</p>
