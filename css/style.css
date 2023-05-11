@@ -735,7 +735,6 @@ body {
 .hero-bg > svg {
   --p-svg-color: hsl(var(--clr-neutral-300));
   color: var(--p-svg-color);
-  inline-size: 100%;
 }
 
 .theme-light .hero-bg > svg {
