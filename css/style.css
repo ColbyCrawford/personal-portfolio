@@ -653,7 +653,6 @@ h6 {
 
 html, body {
   overflow-x: hidden;
-  block-size: 100%;
 }
 
 body {
@@ -1232,7 +1231,6 @@ body {
   border: 0.75rem solid var(--p-border-color);
   border-radius: 7.5rem 7.5rem 1.25rem 1.25rem;
   block-size: 24.6875rem;
-  background-color: red;
 }
 
 @media only screen and (min-width: 768px) {
