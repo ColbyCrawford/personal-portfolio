@@ -738,10 +738,6 @@ body {
   inline-size: 100%;
 }
 
-.hero-bg > svg.is-desktop-only {
-  block-size: 100%;
-}
-
 .theme-light .hero-bg > svg {
   --p-svg-color: hsl(var(--clr-neutral-300));
 }
