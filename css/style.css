@@ -1970,8 +1970,7 @@ body {
   margin-block-end: -0.0625rem;
 }
 
-.no-scroll {
-  block-size: 100vh;
+.u-overflow-y-hidden {
   overflow-y: hidden;
 }
 
